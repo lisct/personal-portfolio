@@ -1,0 +1,57 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// NOTE
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :)
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.5rem; // currently ems cause chrome bug misinterpreting rems on body element
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+}
+
+div, header, footer {
+  box-sizing: border-box;
+}
+
+// Logo SVG
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.logo{
+  width: 6.3rem;
+
+  .cls-1{fill:none;}
+  .cls-2{fill:#c0e3f6;}
+  .cls-3{clip-path:url(#clip-path);}
+  .cls-4{fill:#bfe3f6;}
+  .cls-5{fill:#c0e4f7;}
+  .cls-6{fill:#8dd6ef;}
+
+}
+
+
+// Social SVG
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.social_icon{
+  width: 1.5rem;
+
+  .cls-1{
+    fill:#c1e4f8;
+  }
+  
+}
