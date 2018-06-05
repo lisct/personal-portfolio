@@ -1,3 +1,8 @@
-/* Base files. */
+// Base files
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import "base/settings";
 @import "base/font";
-@import "base/base-styles";
+@import "base/base";
+@import "components/header";
+@import "components/hero";
