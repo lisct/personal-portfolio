@@ -1,7 +1,7 @@
 import React from 'react';
 import heroBubbles from '../helpers/hero-bubbles';
 
-class Hero extends React.Component{
+class HeroBackground extends React.Component{
 
     componentDidMount(){
 
@@ -18,4 +18,4 @@ class Hero extends React.Component{
     }
 }
 
-export default Hero;
+export default HeroBackground;

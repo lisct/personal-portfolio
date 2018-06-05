@@ -4,9 +4,9 @@ class Header extends React.Component{
     render(){
         return(
             <header className="wrap container-fluid">
-                <div className="row">
+                <div className="row  middle-xs">
 
-                    <div className="col-xs-8">
+                    <div className="col-xs-7">
                         <div className="box">
                             <a href="#">
                                 <svg className="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.95 91.17">
@@ -20,8 +20,8 @@ class Header extends React.Component{
                         </div>
                     </div>
                    
-                    <div className="col-xs-4">
-                        <div className="box">
+                    <div className="col-xs-5">
+                        <div className="box social">
 
                             <div className="row end-xs">
                                 <div className="col-xs-1">

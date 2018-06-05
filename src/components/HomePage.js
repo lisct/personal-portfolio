@@ -1,11 +1,13 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import HeroBackground from '../components/HeroBackground';
+import HeroContent from '../components/HeroContent';
 
 class HomePage extends React.Component{
     render(){
         return(
             <div>
-                <Hero />
+                <HeroContent />
+                <HeroBackground />
             </div>
         )
     }
