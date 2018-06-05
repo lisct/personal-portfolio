@@ -5,13 +5,13 @@ class Hero extends React.Component{
 
     componentDidMount(){
 
-        heroBubbles();
+        heroBubbles(); // hero canvas code
 
     }
     
     render(){
         return(
-            <div>
+            <div className="hero-interactive">
                 <canvas id="canvas"></canvas>
             </div>
         )
