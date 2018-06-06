@@ -37,8 +37,66 @@
 
     color: $blue_dark;
     font-weight: 300;
-    font-family: $font-main-bold
+    font-family: $font-main-bold;
+    position: relative;
 
+    &_dot:before{
+
+      content: '';
+      border: 2px solid $blue_dark;
+      background-color: $gray;
+      border-radius: 50px;
+      height: 8px;
+      left: 15px;
+      top: 0px;
+      position: absolute;
+      width: 8px;
+  
+    }
+
+  }
+
+}
+
+// Responsive
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@media (max-width: 425px) {
+  /* For mobile phones: */
+
+  .hero{
+
+    &_container{
+
+  
+      &:before {
+
+        min-height: calc(100vh - 53rem);
+  
+      }
+
+      h1{
+
+        font-size: 2.3rem;
+        padding: 0 5rem;
+        
+      }
+  
+    }
+
+    &_user{
+
+      &_dot:before{
+
+        height: 6px;
+        left: 12px;
+        top: -1px;
+        width: 6px;
+    
+      }
+
+    }
+  
   }
 
 }

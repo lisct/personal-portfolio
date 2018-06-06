@@ -36,13 +36,88 @@ header{
 // Social SVG
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.social_icon{
+.social{
 
-  width: 1.5rem;
+  &_icon{
 
-  .cls-1{
+    width: 1.7rem;
+    transform: scale(1);
+    transition: all .3s;
 
-    fill:$blue;
+    .cls-1{
+
+      fill:$blue;
+      transition: all .2s;
+      
+    }
+
+  }
+
+  // Hover icons
+  
+  &_icon:hover{
+    
+    transform: scale(1.2);
+
+  }
+
+  &_email:hover {
+
+    .cls-1{
+
+      fill: darken($blue, 20%);
+
+    }
+    
+  }
+
+  &_dribble:hover {
+
+    .cls-1{
+
+      fill: #ea4c89;
+
+    }
+    
+  }
+
+  &_github:hover {
+
+    .cls-1{
+
+      fill: #24292e;
+
+    }
+    
+  }
+
+  &_instagram:hover {
+
+    .cls-1{
+
+      fill: #ED4956;
+
+    }
+    
+  }
+
+  &_twitter:hover {
+
+    .cls-1{
+
+      fill: #1da1f2;
+
+    }
+    
+  }
+
+  &_linkedin:hover {
+
+    .cls-1{
+
+      fill: #0077B5;
+
+    }
     
   }
 

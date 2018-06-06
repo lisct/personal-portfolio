@@ -24,10 +24,10 @@ class Header extends React.Component{
                         <div className="box social">
 
                             <div className="row end-xs">
-                                <div className="col-xs-1">
+                                <div className="col-sm-1 col-xs-2">
                                     <div className="box">
                                         <div className="social_icon social_email">
-                                            <a href="#">
+                                            <a href="mailto:lcruztaveras@gmail.com">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.28 15.38">
                                                     <title>email</title>
                                                     <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
@@ -38,10 +38,10 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-xs-1">
+                                <div className="col-sm-1 col-xs-2">
                                     <div className="box">
                                         <div className="social_icon social_dribble">
-                                            <a href="#">
+                                            <a href="https://dribbble.com/LisCT" target="_blank">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.8 15.8">
                                                     <title>Dibble</title>
                                                     <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
@@ -57,10 +57,10 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-xs-1">
+                                <div className="col-sm-1 col-xs-2">
                                     <div className="box">
                                         <div className="social_icon social_github">
-                                            <a href="#">
+                                            <a href="https://github.com/LisCT" target="_blank">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.24 19.49">
                                                     <title>github</title>
                                                     <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
@@ -72,10 +72,10 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-xs-1">
+                                <div className="col-sm-1 col-xs-2">
                                     <div className="box">
                                         <div className="social_icon social_instagram">
-                                            <a href="#">
+                                            <a href="https://www.instagram.com/lisccode/" target="_blank">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.92 38.92">
                                                     <title>Instagram</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
                                                     <path className="cls-1" d="M28.18,0H10.74A10.75,10.75,0,0,0,0,10.74V28.18A10.75,10.75,0,0,0,10.74,38.92H28.18A10.74,10.74,0,0,0,38.92,28.18V10.74A10.75,10.75,0,0,0,28.18,0ZM19.46,29.49a10,10,0,1,1,10-10A10,10,0,0,1,19.46,29.49ZM31.7,10.83A2.53,2.53,0,1,1,29.91,6.5a2.53,2.53,0,0,1,1.79,4.33Z"/></g></g>
@@ -85,10 +85,10 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-xs-1">
+                                <div className="col-sm-1 col-xs-2">
                                     <div className="box">
                                         <div className="social_icon social_twitter">
-                                            <a href="#">
+                                            <a href="https://twitter.com/lisct" target="_blank">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.75 18.78">
                                                     <title>twitter</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path className="cls-1" d="M22,2.82a8.67,8.67,0,0,1-2.49.69,4.43,4.43,0,0,0,1.91-2.4,8.62,8.62,0,0,1-2.76,1.05,4.35,4.35,0,0,0-7.52,3,4.07,4.07,0,0,0,.12,1,12.31,12.31,0,0,1-9-4.54,4.27,4.27,0,0,0-.59,2.19A4.35,4.35,0,0,0,3.61,7.38a4.39,4.39,0,0,1-2-.54v0a4.35,4.35,0,0,0,3.49,4.26A4.37,4.37,0,0,1,4,11.3a4.47,4.47,0,0,1-.82-.08,4.36,4.36,0,0,0,4.06,3,8.74,8.74,0,0,1-5.39,1.85,8.94,8.94,0,0,1-1-.06,12.22,12.22,0,0,0,6.66,2A12.27,12.27,0,0,0,19.8,5.63V5.07A8.6,8.6,0,0,0,22,2.82Z"/>
                                                     <path className="cls-1" d="M7.45,18.78A13.1,13.1,0,0,1,.36,16.7a.79.79,0,0,1,.52-1.45c.32,0,.64.05,1,.05a8,8,0,0,0,3.35-.73,5.15,5.15,0,0,1-2.77-3.11.79.79,0,0,1,.15-.75A5.12,5.12,0,0,1,.85,6.89v0a.82.82,0,0,1,.39-.69l.19-.08a5.17,5.17,0,0,1,.15-4.88A.79.79,0,0,1,2.2.8a.8.8,0,0,1,.68.28,11.6,11.6,0,0,0,7.43,4.17V5.13A5.14,5.14,0,0,1,18.86,1.3,8.1,8.1,0,0,0,21,.43a.8.8,0,0,1,.9.06.79.79,0,0,1,.26.86,5.24,5.24,0,0,1-.28.69.76.76,0,0,1,.71.28.78.78,0,0,1,.06.94,9.45,9.45,0,0,1-2,2.2v.17a13.55,13.55,0,0,1-3.38,8.85A12.59,12.59,0,0,1,7.45,18.78ZM3.94,16.65a11.55,11.55,0,0,0,3.51.55A11.09,11.09,0,0,0,16,13.44a12,12,0,0,0,3-7.8V5.09a.78.78,0,0,1,.33-.66l.17-.13a.79.79,0,0,1-.78-.54A.77.77,0,0,1,19,2.9l-.2,0A.8.8,0,0,1,18,2.7a3.56,3.56,0,0,0-6.15,2.43,3.1,3.1,0,0,0,.1.81.82.82,0,0,1-.17.69.8.8,0,0,1-.64.28A13.11,13.11,0,0,1,2.54,3.06a3.35,3.35,0,0,0-.07.71A3.53,3.53,0,0,0,4.05,6.72a.8.8,0,0,1,.31.9.78.78,0,0,1-.75.55h0a5,5,0,0,1-1-.12,3.54,3.54,0,0,0,2.65,2.32.82.82,0,0,1,.64.75.79.79,0,0,1-.59.79,5,5,0,0,1-.84.16,3.55,3.55,0,0,0,2.74,1.38A.79.79,0,0,1,8,14a.82.82,0,0,1-.26.88A9.58,9.58,0,0,1,3.94,16.65Z"/></g></g>
@@ -98,10 +98,10 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-xs-1">
+                                <div className="col-sm-1 col-xs-2">
                                     <div className="box">
                                         <div className="social_icon social_linkedin">
-                                            <a href="#">
+                                            <a href="https://www.linkedin.com/in/lisct/" target="_blank">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.3 15.62">
                                                     <title>linkedin</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="LinkedIn">
                                                     <path className="cls-1" d="M15.78,9.46V15.1H12.51V9.84c0-1.33-.48-2.23-1.66-2.23a1.8,1.8,0,0,0-1.68,1.2,2.38,2.38,0,0,0-.11.8V15.1H5.79s0-8.91,0-9.84H9.06v1.4l0,0h0v0A3.26,3.26,0,0,1,12,5C14.16,5,15.78,6.44,15.78,9.46ZM2.37.52a1.7,1.7,0,1,0,0,3.4h0a1.71,1.71,0,1,0,0-3.4ZM.71,15.1H4V5.26H.71Z"/>
