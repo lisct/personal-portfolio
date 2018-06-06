@@ -53,6 +53,19 @@ header{
 
   }
 
+  &_behance{
+
+    width: 2.2rem;
+
+  }
+
+
+  &_twitter{
+
+    width: 1.8rem;
+
+  }
+
   // Hover icons
   
   &_icon:hover{
@@ -66,6 +79,16 @@ header{
     .cls-1{
 
       fill: darken($blue, 20%);
+
+    }
+    
+  }
+
+  &_behance:hover {
+
+    .cls-1{
+
+      fill: #0057ff;
 
     }
     
