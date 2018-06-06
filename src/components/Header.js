@@ -6,7 +6,7 @@ class Header extends React.Component{
             <header className="wrap container-fluid">
                 <div className="row  middle-xs">
 
-                    <div className="col-xs-7">
+                    <div className="col-xs-3 col-sm-7">
                         <div className="box">
                             <a href="#">
                                 <svg className="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.95 91.17">
@@ -20,11 +20,11 @@ class Header extends React.Component{
                         </div>
                     </div>
                    
-                    <div className="col-xs-5">
+                    <div className="col-xs-9 col-sm-5">
                         <div className="box social">
 
                             <div className="row end-xs">
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_email">
                                             <a href="mailto:lcruztaveras@gmail.com">
@@ -38,7 +38,7 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_behance">
                                             <a href="https://www.behance.net/LisCT" target="_blank">
@@ -52,7 +52,7 @@ class Header extends React.Component{
                                 </div>
 
 
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_dribble">
                                             <a href="https://dribbble.com/LisCT" target="_blank">
@@ -71,7 +71,7 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_github">
                                             <a href="https://github.com/LisCT" target="_blank">
@@ -86,7 +86,7 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_instagram">
                                             <a href="https://www.instagram.com/lisccode/" target="_blank">
@@ -99,7 +99,7 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_twitter">
                                             <a href="https://twitter.com/lisct" target="_blank">
@@ -112,7 +112,7 @@ class Header extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className="col-sm-1 col-xs-2">
+                                <div className="col-sm-1">
                                     <div className="box">
                                         <div className="social_icon social_linkedin">
                                             <a href="https://www.linkedin.com/in/lisct/" target="_blank">
