@@ -1,16 +1,26 @@
 import React from 'react';
-import HeroBackground from '../components/HeroBackground';
-import HeroContent from '../components/HeroContent';
+import { Fragment } from 'react';
+
+import Hero from '../components/Hero';
+import Portfolio from '../components/Portfolio';
 
 class HomePage extends React.Component{
+
     render(){
+        
         return(
-            <div>
-                <HeroContent />
-                <HeroBackground />
-            </div>
+
+            <Fragment>
+
+                <Hero />
+                <Portfolio />
+                
+            </Fragment>
+            
         )
+
     }
+
 }
 
-export default HomePage;
+export default HomePage

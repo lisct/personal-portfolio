@@ -1,7 +1,7 @@
-function heroBubbles(){
+function heroBubbles(container){
 
     // Initial Setup
-    var canvas = document.querySelector('#canvas');
+    var canvas = document.querySelector(container); // getting the item when the fuction is called
     var context = canvas.getContext('2d'); // passings objs of the canvas
 
     canvas.width = window.innerWidth;
@@ -183,4 +183,4 @@ function heroBubbles(){
 
 }
 
-export default heroBubbles;
+export default heroBubbles

@@ -20,7 +20,7 @@
     background-size: 800px;
     text-align: center;
     min-height: 100vh;
-    padding: 9rem 0;
+    padding: 9rem 0;  
 
     &:before {
 
@@ -33,6 +33,7 @@
 
   }
 
+  // user name
   &_user{
 
     color: $blue_dark;
@@ -52,6 +53,102 @@
       position: absolute;
       width: 8px;
   
+    }
+
+  }
+
+  &_explore{
+    
+    bottom: 53px;
+    cursor: pointer;
+    left: 20%;
+    position: absolute;
+
+    &--text{
+
+      color: darken($gray_dark, 20%);
+      transition: all .1s ease-in-out;
+
+    }
+    
+    &--line{
+
+      // circle
+      &:after{
+
+        content: '';
+        background: darken($gray_dark, 20%);
+        border-radius: 50px;
+        bottom: 4px;
+        display: inline-block;
+        height: 7px;
+        left: -2px;
+        position: absolute;
+        transform: scale(1);
+        width: 7px;
+        z-index: 9999;
+        transition: all .1s ease-in-out;
+        
+        
+      }
+
+      // line to move
+      &:before{
+
+        content: '';
+        background: $gray_dark;
+        display: inline-block;
+        height: 27px;
+        position: absolute;
+        top: 56px;
+        transition: all .2s ease-in-out;
+        width: 3px;
+        z-index: 999;
+        
+      }
+
+   }
+
+    // background line 
+    &--fill:before{
+
+      content: '';
+      background: $gray_light;
+      display: inline-block;
+      height: 52px;
+      width: 3px;
+      position: absolute;
+      bottom: -53px;
+      
+    }
+
+
+   // hover interaction with the explore
+   &:hover{
+
+      .hero_explore--text{
+
+        color: $blue_dark;
+
+      }
+
+      // circle
+      .hero_explore--line::after{
+        
+        background: $blue_dark;  
+        transform: scale(1.3);  
+
+      }
+
+      // line to move
+      .hero_explore--line:before{
+
+        height: 60px;  
+        background: $blue;      
+
+      }
+
+
     }
 
   }
