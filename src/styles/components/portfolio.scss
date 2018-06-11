@@ -1,0 +1,104 @@
+
+.portfolio_project{
+    
+    &__wrapper{
+
+        position: relative;
+
+    }
+    
+    &__image img{
+
+        width: 100%;
+    }
+
+    &__info{
+
+        background-color: #fff;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.28);
+        display: block;
+        margin-left: 17%;
+        padding: 3rem;
+        position: absolute;
+        top: 35%;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+
+            border: 2px solid $blue;
+            transform: translate(0px, -10px);
+
+        }
+     
+    }
+
+    &__circle{
+
+        background-color: $blue;
+        border: 3px solid #fff;
+        border-radius: 15px;
+        height: 20px;
+        left: -6.2%;
+        margin-top: -8px;
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        z-index: 99;
+ 
+    }
+
+    &__date, &__divider, &__tech{
+
+        display: inline-block;
+        color: $blue-dark;
+
+    }
+
+    &__divider{
+
+        padding: 0 1rem;
+
+    }
+
+    &__title, &__description{
+
+        color: $darker;
+
+    }
+
+}
+
+
+.portfolio_editor{
+
+    .header_main{
+
+        margin-top:  40rem
+        
+    }
+
+    // mobile first
+    @media (min-width: 425px) {
+
+        .header_main{
+
+            margin-top: 26rem;
+            
+        }
+    
+    }
+
+
+    @media (min-width: 580px) {
+
+        .header_main{
+
+            margin-top: 0;
+            
+        }
+    
+    }
+
+}

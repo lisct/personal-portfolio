@@ -4,12 +4,12 @@ import heroBubbles from '../helpers/hero-bubbles';
 class HeroBackground extends React.Component{
 
     // creating an instace of the canvas to be able to pass it as an argument
-    canvas = React.createRef();
+    canvasRef = React.createRef();
 
     // when this component is loaded
     componentDidMount(){
 
-        heroBubbles(this.canvas.current.id); //where the code of the bubbles live. Which receive the id of the actual canvas 
+        heroBubbles(this.canvasRef.current.id); //where the code of the bubbles live. Which receive the id of the actual canvas 
 
     }
     
@@ -19,7 +19,7 @@ class HeroBackground extends React.Component{
 
             <div className="hero-interactive">
         
-                <canvas id="canvas" ref={this.canvas}></canvas>
+                <canvas id="canvas" ref={this.canvasRef}></canvas>
         
             </div>
 

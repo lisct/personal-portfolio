@@ -4,7 +4,6 @@ import { Fragment } from 'react';
 
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
-import EditPortfolio from '../components/EditPortfolio';
 import NotFoundPage from '../components/NotFoundPage';
 
 const AppRouter = () => (
@@ -15,8 +14,7 @@ const AppRouter = () => (
             <Header />
 
             <Switch>
-                <Route path="/" component={HomePage} exact={true}/>
-                <Route path="/edit-portfolio" component={EditPortfolio} exact={true}/>
+                <Route path="/" component={ HomePage } exact={true}/>
                 <Route component={NotFoundPage} />
             </Switch>
 

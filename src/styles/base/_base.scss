@@ -24,12 +24,121 @@ body {
 }
 
 
+// Padding
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.pb-medium{
+
+  padding-bottom: 3rem;
+
+}
+
 // Titles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
 h1{
 
   font-weight: 600;
 
 }
+
+.header_main{
+
+  text-align: center;
+  color: $blue-dark;
+  padding: 8rem 0;
+
+}
+
+// Form
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+textarea{
+
+  resize: none;
+
+}
+
+select{
+  
+  background-image:
+  linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  border-radius: 0;
+  height: 4rem;
+
+}
+
+input, select, textarea{
+
+  background-color: white;
+  border: 1px solid $gray_dark;
+  box-sizing: border-box;
+  color: $darker;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+
+  @include placeholder {
+
+    color: darken($gray_dark, 30%);
+    font-family: $font-main;
+  
+  }
+
+  &:hover, &:focus{
+
+    border-color: $blue-dark;
+
+  }
+
+}
+
+input, select, textarea, .btn{
+
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  outline:0px !important;
+  -webkit-appearance:none;
+  transition: all .3s ease-in-out;
+
+}
+
+// Button
+//–––––––––––––––––––––––––––––––––––––––––––––––––
+
+.btn{
+
+  background-color: $blue-dark;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-family: $font-main;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 0;
+  width: 100%;
+
+  &:hover{
+
+    background-color: darken($blue-dark, 15%);
+
+  }
+  
+}
+
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
