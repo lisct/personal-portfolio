@@ -4,14 +4,28 @@
     &__wrapper{
 
         position: relative;
+        margin-bottom: 7rem;
 
     }
     
     &__image img{
 
+        opacity: .2;
+        transition: all .3s ease-in-out;
         width: 100%;
+
     }
 
+    &:hover{
+
+        .portfolio_project__image img{
+
+            opacity: 1;
+
+        }
+
+    }
+    
     &__info{
 
         background-color: #fff;
@@ -65,6 +79,12 @@
     &__title, &__description{
 
         color: $darker;
+
+    }
+
+    &--hide{
+
+        display: none;
 
     }
 

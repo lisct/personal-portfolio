@@ -13,6 +13,7 @@ class EditPortfolio extends React.Component{
 
                             <h1 className="header_main">Portfolio Editor</h1>
                             <AddPortfolioForm addPortfolioItem={ this.props.addPortfolioItem } />
+                            <button className="btn" onClick={this.props.loadStartedPortfolioItem}> Load Started Items </button>
                         
                         </div>
                     </div>

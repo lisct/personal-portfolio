@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import Hero from '../components/Hero';
 import Portfolio from '../components/Portfolio';
 import EditPortfolio from '../components/EditPortfolioPage';
+import startedPortfolioItems from '../helpers/portfolio-data';
 
 class HomePage extends React.Component{
 
@@ -26,6 +27,12 @@ class HomePage extends React.Component{
 
     }
 
+    loadStartedPortfolioItem = () => {
+        
+        this.setState({ portfolioItems: startedPortfolioItems });
+
+    }
+
     render(){
         
         return(
@@ -33,8 +40,12 @@ class HomePage extends React.Component{
             <Fragment>
 
                 <Hero />
-                <Portfolio />
-                <EditPortfolio addPortfolioItem={ this.addPortfolioItem } />
+                <Portfolio 
+                    portfolioItems={ this.state.portfolioItems }
+                />
+                <EditPortfolio 
+                    addPortfolioItem={ this.addPortfolioItem } 
+                    loadStartedPortfolioItem={ this.loadStartedPortfolioItem} />
                 
             </Fragment>
             

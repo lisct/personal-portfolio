@@ -1,5 +1,5 @@
 // This is the info to fill the portfolio items
-const portfolio = {
+const startedPortfolioItems = {
 
   item01: {
 
@@ -39,4 +39,4 @@ const portfolio = {
 
 }
 
-export default portfolio
+export default startedPortfolioItems
