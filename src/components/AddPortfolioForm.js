@@ -37,15 +37,23 @@ class AddPortfolioForm extends React.Component{
             <form className="portfolio_editor--form pb-medium" onSubmit={ this.createPortfolioItem }>
 
                 <div className="row">
+                    <div className="col-xs-12">
+                        <div className="box">
+                            <input type="text" name="name" ref={this.nameRef} placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row">
                     <div className="col-xs-6">
                         <div className="box">
-                            <input name="date" ref={this.dateRef} type="text" placeholder="Date" />
+                            <input type="text" name="date" ref={this.dateRef} placeholder="Date" />
                         </div>
                     </div>
 
                     <div className="col-xs-6">
                         <div className="box">
-                            <input name="tech" ref={this.techRef} type="text" placeholder="Tech" />
+                            <input type="text" name="tech" ref={this.techRef} placeholder="Tech" />
                         </div>
                     </div>
                 </div>
@@ -64,15 +72,7 @@ class AddPortfolioForm extends React.Component{
 
                     <div className="col-xs-6">
                         <div className="box">
-                            <input name="name" ref={this.nameRef} type="text" placeholder="Name" />
-                        </div>
-                    </div>
-                </div>
-                
-                <div className="row">
-                    <div className="col-xs-12">
-                        <div className="box">
-                            <input name="image" ref={this.imageRef} type="text" placeholder="Image" />
+                            <input type="text" name="image" ref={this.imageRef} placeholder="Image" />
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ class AddPortfolioForm extends React.Component{
                 <div className="row">
                     <div className="col-xs-12">
                         <div className="box">
-                            <textarea name="desc" ref={this.descRef} type="text" placeholder="Description" ></textarea>
+                            <textarea name="desc" ref={this.descRef} placeholder="Description" ></textarea>
                         </div>
                     </div>
                 </div>

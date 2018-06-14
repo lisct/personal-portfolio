@@ -165,7 +165,6 @@
 
     &_container{
 
-  
       &:before {
 
         min-height: calc(100vh - 53rem);
@@ -197,3 +196,44 @@
   }
 
 }
+
+
+// @media (max-width: 2560px) {
+//   /* For mobile phones: */
+
+//   .hero{
+
+//     &_container{
+
+//       &:before {
+
+//         min-height: calc(100vh - 88rem);
+  
+//       }
+  
+
+//       }   
+
+//     }
+
+//   }
+
+//   @media (max-width: 1440px) {
+//     /* For mobile phones: */
+  
+//     .hero{
+  
+//       &_container{
+  
+//         &:before {
+  
+//           min-height: calc(100vh - 53rem);
+    
+//         }
+    
+  
+//         }   
+  
+//       }
+  
+//   }

@@ -3,6 +3,7 @@
 /public/CNAME
 /public/css
 /public/js
+/src/base.js
 .vscode
 
 #OS junk files
