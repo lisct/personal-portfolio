@@ -1,3 +1,5 @@
+// Portfolio
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .portfolio_project{
     
@@ -8,43 +10,27 @@
 
         // mobile first
         @media (min-width: 375px) {
-    
-            &{
-    
-                margin-bottom:  40rem;
+
+            margin-bottom:  40rem;
                 
-            }
-        
         }
 
         @media (min-width: 425px) {
-    
-            &{
-    
-                margin-bottom:  30rem;
-                
-            }
+
+            margin-bottom:  30rem;
         
         }
     
         @media (min-width: 580px) {
     
-            &{
-    
-                margin-bottom: 20rem;
-                
-            }
+            margin-bottom: 20rem;
         
         }
 
         @media (min-width: 600px) {
     
-            &{
-    
-                margin-bottom: 7rem;
-                
-            }
-        
+            margin-bottom: 7rem;
+
         }
 
 

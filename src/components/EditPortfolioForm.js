@@ -1,6 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class EditPortfolioForm extends React.Component{
+
+    static proTypes = {
+
+        portfolioItems: PropTypes.shape({
+
+            date: PropTypes.string,
+            tech: PropTypes.string, 
+            status: PropTypes.string, 
+            name: PropTypes.string, 
+            desc: PropTypes.string, 
+            image: PropTypes.string
+
+        }),
+        index: PropTypes.string,
+        updatePortfolioItem: PropTypes.func
+
+    }
 
     handleChange = (e) => {
 

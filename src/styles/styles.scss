@@ -1,9 +1,13 @@
 // Base files
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// NOTE: 
+// The responsive style is mobile first
+
 @import "base/settings";
 @import "base/font";
 @import "base/base";
+@import "components/login";
 @import "components/header";
 @import "components/hero";
 @import "components/portfolio";

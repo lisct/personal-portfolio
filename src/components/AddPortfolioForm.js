@@ -1,6 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class AddPortfolioForm extends React.Component{
+
+    static propTypes = {
+
+        addPortfolioItem: PropTypes.func
+
+    }
 
     // creating an instace of the item to get the values of the inputs
     dateRef = React.createRef();

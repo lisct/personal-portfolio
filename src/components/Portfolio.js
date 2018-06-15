@@ -1,9 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ItemPortfolio from '../components/ItemPortfolio';
 
 
 class Portfolio extends React.Component{
+
+    static propTypes = {
+
+        portfolioItems: PropTypes.object,
+
+    }
 
     render(){
 

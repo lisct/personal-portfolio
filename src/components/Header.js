@@ -6,7 +6,6 @@ const Header = () => (
 
     <header className="wrap container-fluid">
         <div className="row  middle-xs">
-
             <div className="col-xs-3 col-sm-7">
                 <div className="box">
                     <Link to="/">

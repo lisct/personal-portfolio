@@ -12,9 +12,10 @@ const AppRouter = () => (
         <Fragment>
 
             <Header />
-
+            
             <Switch>
                 <Route path="/" component={ HomePage } exact={true}/>
+                <Route path="/:login" component={ HomePage } exact={true}/>
                 <Route component={NotFoundPage} />
             </Switch>
 

@@ -1,8 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AddPortfolioForm from './AddPortfolioForm';
 import EditPortfolioForm from './EditPortfolioForm';
 
 class EditPortfolioPage extends React.Component{
+
+    static propTypes = {
+
+        portfolioItems: PropTypes.object,
+        updatePortfolioItem: PropTypes.func,
+        addPortfolioItem: PropTypes.func,
+        deletePortfolioItem: PropTypes.func,
+        loadStartedPortfolioItem: PropTypes.func
+        
+    }
 
     render(){
 

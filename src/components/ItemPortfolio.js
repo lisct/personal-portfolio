@@ -1,6 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ItemPortfolio extends React.Component{
+
+    static propTypes = {
+
+        itemDetails: PropTypes.shape({
+
+            date: PropTypes.string,
+            tech: PropTypes.string, 
+            status: PropTypes.string, 
+            name: PropTypes.string, 
+            desc: PropTypes.string, 
+            image: PropTypes.string    
+        
+        })
+
+    } 
 
     render(){
 

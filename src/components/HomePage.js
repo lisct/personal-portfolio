@@ -1,12 +1,14 @@
 import React from 'react';
 import { Fragment } from 'react';
+import firebase from 'firebase';
 
+import Login from '../components/Login';
 import Hero from '../components/Hero';
 import Portfolio from '../components/Portfolio';
 import EditPortfolioPage from '../components/EditPortfolioPage';
 import startedPortfolioItems from '../helpers/portfolio-data';
 
-import base from '../base';
+import base, { firebaseApp } from '../base';
 
 class HomePage extends React.Component{
 
@@ -79,11 +81,26 @@ class HomePage extends React.Component{
 
     }
 
+    authHandler = async (authData) => {
+
+        console.log(authData);
+
+    }
+
+    authenticate = (provider) => {
+
+        const authProvider = new firebase.auth[`${provider}AuthProvider`]();
+        firebaseApp.auth().signInWithPopup(authProvider).then(this.authHandler);
+
+    }
+
     render(){
         
         return(
-
+           
             <Fragment>
+
+                {(this.props.location.pathname == '/login') && <Login authenticate={ this.authenticate }/>}
 
                 <Hero />
                 <Portfolio 
