@@ -3,23 +3,30 @@ import PropTypes from 'prop-types';
 
 class ItemPortfolio extends React.Component{
 
+    // allow string for the uid that are included when you logged 
     static propTypes = {
 
-        itemDetails: PropTypes.shape({
+        itemDetails:  PropTypes.oneOfType([
 
-            date: PropTypes.string,
-            tech: PropTypes.string, 
-            status: PropTypes.string, 
-            name: PropTypes.string, 
-            desc: PropTypes.string, 
-            image: PropTypes.string    
-        
-        })
+            PropTypes.shape({
+
+                date: PropTypes.string,
+                tech: PropTypes.string, 
+                status: PropTypes.string, 
+                name: PropTypes.string, 
+                desc: PropTypes.string, 
+                image: PropTypes.string
+            
+            }), 
+            
+            PropTypes.string
+
+        ]),
 
     } 
 
     render(){
-
+    
         const { date, tech, status, name, desc, image } = this.props.itemDetails;
         const isAvailable =  status === "available";
 

@@ -8,7 +8,7 @@ class Portfolio extends React.Component{
 
     static propTypes = {
 
-        portfolioItems: PropTypes.object,
+        portfolioItems: PropTypes.object
 
     }
 

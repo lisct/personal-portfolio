@@ -14,7 +14,9 @@ class HomePage extends React.Component{
 
     state = {
         
-        portfolioItems: {}
+        portfolioItems: {},
+        uid: null,
+        owner: null
 
     }
 
@@ -22,9 +24,21 @@ class HomePage extends React.Component{
 
         // linking firebase with the states
         this.ref = base.syncState(`portfolio`, {
+
             context: this,
             state: 'portfolioItems'
+
         });
+
+        // Check if we are logged when refresh then stay logged
+        firebase.auth().onAuthStateChanged( user => {
+
+            if(user){
+
+                this.authHandler({ user });
+
+            }
+        })
 
     }
 
@@ -77,13 +91,34 @@ class HomePage extends React.Component{
 
     loadStartedPortfolioItem = () => {
         
+        // load to the state the started js obj doc
         this.setState({ portfolioItems: startedPortfolioItems });
 
     }
-
+    
     authHandler = async (authData) => {
 
-        console.log(authData);
+        // Look up the current store in the firebase database
+        const inItems = await base.fetch('portfolio', { context: this });
+        
+        // Claim it fi there is no owner
+        if(!inItems.owner){
+
+            await base.post('portfolio/owner', {
+
+                data: authData.user.uid
+                
+            })
+
+        }
+
+        // Set the state of the invesntory component to reglect the current user
+        this.setState({
+
+            uid: authData.user.uid,
+            owner: inItems.owner || authData.user.uid
+
+        })
 
     }
 
@@ -94,25 +129,44 @@ class HomePage extends React.Component{
 
     }
 
+    logout = async () => {
+
+        await firebase.auth.singOut;
+        this.setState({ uid: null, owner: null });   
+
+    }
+    
+
     render(){
         
         return(
            
             <Fragment>
-
-                {(this.props.location.pathname == '/login') && <Login authenticate={ this.authenticate }/>}
+                {(this.props.location.pathname == '/login') && 
+                    <Login 
+                        authenticate={ this.authenticate } 
+                        uid={ this.state.uid } 
+                        owner={ this.state.owner }
+                        noOwner={ this.state.uid !== this.state.owner }
+                        logout={ this.logout }
+                    />
+                }
 
                 <Hero />
                 <Portfolio 
                     portfolioItems={ this.state.portfolioItems }
                 />
-                <EditPortfolioPage 
-                    addPortfolioItem={ this.addPortfolioItem } 
-                    loadStartedPortfolioItem={ this.loadStartedPortfolioItem} 
-                    portfolioItems={ this.state.portfolioItems }
-                    updatePortfolioItem= {this.updatePortfolioItem}
-                    deletePortfolioItem={this.deletePortfolioItem}
-                />
+                
+                {/* //  Chek if the user is the owner and if is logged */}
+                { (this.props.location.pathname == '/login') && this.state.uid === this.state.owner && this.state.uid && 
+                    <EditPortfolioPage 
+                        addPortfolioItem={ this.addPortfolioItem } 
+                        loadStartedPortfolioItem={ this.loadStartedPortfolioItem } 
+                        portfolioItems={ this.state.portfolioItems }
+                        updatePortfolioItem= {this.updatePortfolioItem }
+                        deletePortfolioItem={this.deletePortfolioItem }
+                    />
+                }
             </Fragment>
             
         )

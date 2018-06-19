@@ -3,22 +3,29 @@ import PropTypes from 'prop-types';
 
 class EditPortfolioForm extends React.Component{
 
-    static proTypes = {
+    // allow oneOfType obj or string because the uid that are included when you logged 
+    static propTypes = {
 
-        portfolioItems: PropTypes.shape({
+        portfolioItems:  PropTypes.oneOfType([
 
-            date: PropTypes.string,
-            tech: PropTypes.string, 
-            status: PropTypes.string, 
-            name: PropTypes.string, 
-            desc: PropTypes.string, 
-            image: PropTypes.string
+            PropTypes.shape({
 
-        }),
+                date: PropTypes.string,
+                tech: PropTypes.string, 
+                status: PropTypes.string, 
+                name: PropTypes.string, 
+                desc: PropTypes.string, 
+                image: PropTypes.string
+            
+            }), 
+            
+            PropTypes.string
+
+        ]),
         index: PropTypes.string,
         updatePortfolioItem: PropTypes.func
 
-    }
+    } 
 
     handleChange = (e) => {
 
