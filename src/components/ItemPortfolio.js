@@ -80,4 +80,4 @@ class ItemPortfolio extends React.Component{
 
 }
 
-export default ItemPortfolio;
+export default ItemPortfolio

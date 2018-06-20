@@ -1,0 +1,39 @@
+// Need Resume
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.resume{
+
+    margin-top: 8rem;
+
+    &__title, &__description{
+
+        margin: 0;
+    
+    }
+
+    &__title{
+
+        // mobile first responsive
+        @media (min-width: 768px) {
+
+            font-size: 3.5rem;
+
+        }
+
+    }
+
+    &__description{
+
+      margin-bottom: 3rem;
+
+      // mobile first responsive
+      @media (min-width: 768px) {
+
+        font-size: 1.8rem;
+        margin-bottom: 0;
+
+      }
+
+    }
+    
+}

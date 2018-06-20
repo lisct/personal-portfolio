@@ -1,0 +1,80 @@
+// Footer
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.footer{
+
+    padding: 20rem 0;
+
+    // // mobile first responsive
+    // @media (min-width: 768px) {
+
+    //     font-size: 3.5rem;
+
+    // }
+
+    &__item{
+
+        position: relative;
+        margin-bottom: 3rem;
+
+        &__tittle, &__info{
+
+            font-size: 1.3rem;
+        
+        }
+
+        &__tittle{
+
+            color: lighten(#d9eaf4, 1% );
+        }
+
+        &__info{
+
+            margin: .3rem;
+
+            a{
+
+                color: white;
+
+            }
+
+        }
+
+        &__header{
+
+            font-size: 4rem;
+            font-family:  $font-main-bold;
+            font-size: 600;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+           
+            &:before{
+
+                background-color: white;
+                content: '';
+                display: block;
+                height: 1px;
+                position: absolute;
+                width: 100%;
+                top: -125px;
+
+            }
+
+            &:after{
+
+                background-color: white;
+                bottom: -125px;
+                content: '';
+                display: block;
+                height: 1px;
+                position: absolute;
+                width: 100%;
+                
+
+            }
+
+        }
+
+
+    }
+}

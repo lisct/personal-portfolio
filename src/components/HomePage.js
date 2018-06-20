@@ -6,6 +6,8 @@ import Login from '../components/Login';
 import Hero from '../components/Hero';
 import Portfolio from '../components/Portfolio';
 import EditPortfolioPage from '../components/EditPortfolioPage';
+import NeedResume from '../components/NeedResume';
+
 import startedPortfolioItems from '../helpers/portfolio-data';
 
 import base, { firebaseApp } from '../base';
@@ -167,6 +169,8 @@ class HomePage extends React.Component{
                         deletePortfolioItem={this.deletePortfolioItem }
                     />
                 }
+
+                <NeedResume />
             </Fragment>
             
         )
