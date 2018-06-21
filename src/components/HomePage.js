@@ -12,6 +12,12 @@ import startedPortfolioItems from '../helpers/portfolio-data';
 
 import base, { firebaseApp } from '../base';
 
+// Notes: The conection with the database live here. 
+// The first person in logged will be the owner.  If the user is enable inside the firebase.
+// Inside the database after you logged, will be add a owner obj inside the database. If delete the access will be revoked.
+// You also need a document with all the settings to acces to firebase apiKey, authDomain, databaseURL is what I imported from base
+// This document is not included in this project. It's something that you should set.
+
 class HomePage extends React.Component{
 
     state = {
@@ -144,6 +150,7 @@ class HomePage extends React.Component{
         return(
            
             <Fragment>
+                {/* //  Chek if you are in the login route, then show the loggin btn*/}
                 {(this.props.location.pathname == '/login') && 
                     <Login 
                         authenticate={ this.authenticate } 
@@ -159,7 +166,7 @@ class HomePage extends React.Component{
                     portfolioItems={ this.state.portfolioItems }
                 />
                 
-                {/* //  Chek if the user is the owner and if is logged */}
+                {/* //  Check if the user is the owner and if is logged then show the editor side*/}
                 { (this.props.location.pathname == '/login') && this.state.uid === this.state.owner && this.state.uid && 
                     <EditPortfolioPage 
                         addPortfolioItem={ this.addPortfolioItem } 

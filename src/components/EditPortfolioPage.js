@@ -27,14 +27,16 @@ class EditPortfolioPage extends React.Component{
 
                             {Object.keys(this.props.portfolioItems).map( key => (
                                 
-                                <EditPortfolioForm 
-                                    key={key} 
-                                    index={key}
-                                    portfolioItems={this.props.portfolioItems[key]}  
-                                    updatePortfolioItem= {this.props.updatePortfolioItem}
-                                    deletePortfolioItem={this.props.deletePortfolioItem}
-                                />
-                            
+                                // To avoid create an owner form. Because firebase create an owner obj inside the database. 
+                                (key !== 'owner') &&
+                                    <EditPortfolioForm 
+                                        key={key} 
+                                        index={key}
+                                        portfolioItems={this.props.portfolioItems[key]}  
+                                        updatePortfolioItem= {this.props.updatePortfolioItem}
+                                        deletePortfolioItem={this.props.deletePortfolioItem}
+                                    />
+
                             ))}
                             
                             <AddPortfolioForm addPortfolioItem={ this.props.addPortfolioItem } />

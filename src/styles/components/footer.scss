@@ -3,19 +3,32 @@
 
 .footer{
 
-    padding: 20rem 0;
+    padding: 10rem 0;
+    text-align: center;
 
-    // // mobile first responsive
-    // @media (min-width: 768px) {
+    // mobile first responsive
+    @media (min-width: 768px) {
 
-    //     font-size: 3.5rem;
+        text-align: initial;
+        padding: 20rem 0;
 
-    // }
+    }
 
     &__item{
 
         position: relative;
         margin-bottom: 3rem;
+
+         // mobile first responsive
+         @media (min-width: 768px) {
+
+            &--left{
+
+                text-align: right;
+
+            }
+
+        }
 
         &__tittle, &__info{
 
@@ -26,6 +39,7 @@
         &__tittle{
 
             color: lighten(#d9eaf4, 1% );
+
         }
 
         &__info{
@@ -47,6 +61,14 @@
             font-size: 600;
             letter-spacing: .2rem;
             text-transform: uppercase;
+            margin: 8rem 0;
+
+            // mobile first responsive
+            @media (min-width: 768px) {
+
+                margin: 0;
+
+            }
            
             &:before{
 
@@ -56,25 +78,38 @@
                 height: 1px;
                 position: absolute;
                 width: 100%;
-                top: -125px;
+                top: -40px;
+
+                // mobile first responsive
+                @media (min-width: 768px) {
+
+                    top: -125px;
+
+                }
 
             }
 
             &:after{
 
                 background-color: white;
-                bottom: -125px;
+                bottom: -40px;
                 content: '';
                 display: block;
                 height: 1px;
                 position: absolute;
                 width: 100%;
-                
 
+                // mobile first responsive
+                @media (min-width: 768px) {
+
+                    bottom: -125px;
+
+                }
+                
             }
 
         }
 
-
     }
+
 }

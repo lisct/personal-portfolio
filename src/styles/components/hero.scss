@@ -72,6 +72,12 @@
 
       }
 
+      @media (min-width: 1920px){
+
+        min-height: calc(100vh - 68rem);
+
+      }
+
       @media (min-width: 2560px) {
 
         min-height: calc(100vh - 90rem);

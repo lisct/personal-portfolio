@@ -8,10 +8,13 @@ $blue-lighter: #d5dbe0;
 $blue_dark: #51ace0;
 $darker: #36434d;
 
-// style placeholder text inputs
+  // style placeholder text inputs
 @mixin placeholder {
     &::-webkit-input-placeholder {@content}
     &:-moz-placeholder           {@content}
     &::-moz-placeholder          {@content}
     &:-ms-input-placeholder      {@content}  
   }
+
+
+
