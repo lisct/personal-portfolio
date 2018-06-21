@@ -5,6 +5,7 @@
 
     padding: 10rem 0;
     text-align: center;
+    position: relative;
 
     // mobile first responsive
     @media (min-width: 768px) {
@@ -110,6 +111,123 @@
 
         }
 
+    }
+
+    &_explore{
+
+        bottom: 53px;
+        cursor: pointer;
+        left: 0;
+        margin: auto;
+        right: 0;
+        position: absolute;
+        text-align: center;
+
+        &--text{
+
+            color: lighten(#d9eaf4, 1% );
+            transition: all .1s ease-in-out;
+
+            // mobile first responsive
+            @media (min-width: 768px) {
+
+                margin-left: 6rem;
+
+            }
+
+        }
+        
+        &--line{
+
+            // circle
+            &:after{
+
+                content: '';
+                background: white;
+                border-radius: 50px;
+                bottom: 4px;
+                display: inline-block;
+                height: 7px;
+                left: 0;
+                margin: auto;
+                right: 0;
+                position: absolute;
+                text-align: center;
+                transform: scale(1);
+                width: 7px;
+                z-index: 9999;
+                transition: all .1s ease-in-out;
+            
+            
+            }
+
+            // line to move
+            &:before{
+
+                content: '';
+                background: white;
+                display: inline-block;
+                height: 27px;
+                left: 0;
+                margin: auto;
+                right: 0;
+                position: absolute;
+                top: 56px;
+                text-align: center;
+                transition: all .2s ease-in-out;
+                width: 3px;
+                z-index: 999;
+            
+            }
+
+        }
+
+        // background line 
+        &--fill:before{
+
+            content: '';
+            background: #9ddcf2;
+            bottom: -53px;
+            display: inline-block;
+            height: 52px;
+            left: 0;
+            margin: auto;
+            right: 0;
+            width: 3px;
+            position: absolute;
+            text-align: center;
+            
+        }
+
+
+        // hover interaction with the explore
+        &:hover{
+
+            .footer_explore--text{
+
+                color: white;
+
+            }
+
+            // circle
+            .footer_explore--line::after{
+            
+                background: white;  
+                transform: scale(1.3);  
+
+            }
+
+            // line to move
+            .footer_explore--line:before{
+
+                height: 60px;  
+                background: white;      
+
+            }
+
+
+        }
+    
     }
 
 }

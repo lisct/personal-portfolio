@@ -33,7 +33,12 @@
 
         }
 
+        .col-xs-12, .col-xs-11, .col-sm-8, .col-md-6{
 
+            padding: 0;
+    
+        }
+        
     }
     
     &__image img{
@@ -82,12 +87,19 @@
         border: 3px solid #fff;
         border-radius: 15px;
         height: 20px;
-        left: -6.2%;
+        left: -16.2%;
         margin-top: -8px;
         position: absolute;
         top: 50%;
         width: 20px;
         z-index: 99;
+
+
+        @media (min-width: 768px) {
+
+            left: -6.2%;
+        
+        }
  
     }
 

@@ -36,6 +36,13 @@ const Footer = () => (
                         <p className="footer__item__info"><a href="#">Linkedin</a></p>
                     </div>
                 </div>
+
+
+                <div className="footer_explore">
+                    <h5 className="footer_explore--text">To the Top</h5>
+                    <span className="footer_explore--line"></span>
+                    <span className="footer_explore--fill"></span>
+                </div>
             
             </div>
         </div>
