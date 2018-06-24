@@ -14,13 +14,17 @@
 
   &_container{
 
+    align-items: center;
     background: url("/images/cloud.svg")center  no-repeat;
     background-size: cover;
     background-position: center; 
     background-size: 800px;
+    cursor: url("/images/mouse_pointer@2x.png") 1 1, auto;
+    display:flex;
+    justify-content: center;
     text-align: center;
     min-height: 100vh;
-    padding: 9rem 0; 
+    width:100%;    
 
     @media (min-width: 2560px) {
 
@@ -28,16 +32,12 @@
 
     }
 
-    @media (min-width: 1440px) {
-
-      padding: 13rem 0; 
-
-    }
-    
    &_copy{
 
+      display:table-cell;
       font-size: 2.3rem;
       padding: 0 5rem;
+      vertical-align:middle;
 
       @media (min-width: 424px) {
 
@@ -46,46 +46,7 @@
       }
 
     }
-
-    &:before {
-
-      content: '';
-      display: inline-block;
-      min-height: calc(100vh - 53rem);
-      vertical-align: middle;
-
-      @media (min-width: 425px) {
-
-        min-height: calc(100vh - 58rem);
-
-      }
-
-      @media (min-width: 768px) {
-
-        min-height: calc(100vh - 52rem);
-
-      }
-
-      @media (min-width: 1440px) {
-
-        min-height: calc(100vh - 60rem);
-
-      }
-
-      @media (min-width: 1920px){
-
-        min-height: calc(100vh - 68rem);
-
-      }
-
-      @media (min-width: 2560px) {
-
-        min-height: calc(100vh - 90rem);
-
-      }
-
-    }
-
+    
   }
 
   // user name

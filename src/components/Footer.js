@@ -18,7 +18,7 @@ const Footer = () => (
                     </div>
 
                 </div>
-
+            
                 <div className="col-xs-12 col-sm-6">
                     <div className="box box--center footer__item">
                         <h1 className="footer__item__header">Let’s Work Together</h1>
@@ -26,7 +26,7 @@ const Footer = () => (
                 </div>
 
                 <div className="col-xs-12 col-sm-3">
-                    <div className="box footer__item footer__item--left">
+                    <div className="box footer__item footer__item--left footer__item--social">
                         <h4 className="footer__item__tittle">Follow Me</h4>
                         <p className="footer__item__info"><a href="#">Behance</a></p>
                         <p className="footer__item__info"><a href="#">Dribble</a></p>

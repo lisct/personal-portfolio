@@ -29,6 +29,22 @@ a{
 
 }
 
+// Text Hightlight
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+::-moz-selection {
+
+  background: $blue_dark;
+  color: white;
+
+}
+::selection {
+
+  background: $blue_dark;
+  color: white;
+
+}
+
 
 // Padding
 //––––––––––––––––––––––––––––––––––––––––––––––––––

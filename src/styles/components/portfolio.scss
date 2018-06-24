@@ -11,7 +11,7 @@
         // mobile first
         @media (min-width: 375px) {
 
-            margin-bottom:  40rem;
+            margin-bottom:  35rem;
                 
         }
 
@@ -43,26 +43,39 @@
     
     &__image img{
 
-        opacity: .2;
+        opacity: .5;
         transition: all .3s ease-in-out;
         width: 100%;
 
     }
 
-    &:hover{
+    // mobile first
+    @media (min-width: 769px) {
 
-        .portfolio_project__image img{
+        &__image img{
 
-            opacity: 1;
+            opacity: .2;
 
         }
 
+        &:hover{
+
+            .portfolio_project__image img{
+                
+                opacity: 1;
+    
+            }
+    
+        }    
+                    
     }
+
+  
     
     &__info{
 
         background-color: #fff;
-        border: 2px solid transparent;
+        border: 2px solid $blue;
         border-radius: 5px;
         box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.28);
         display: block;
@@ -72,12 +85,21 @@
         top: 35%;
         transition: all .3s ease-in-out;
 
-        &:hover{
 
-            border: 2px solid $blue;
-            transform: translate(0px, -10px);
+         // mobile first
+        @media (min-width: 769px) {
 
+            border: 2px solid transparent;
+
+            &:hover{
+
+                border: 2px solid $blue;
+                transform: translate(0px, -10px);
+    
+            }
+                
         }
+
      
     }
 

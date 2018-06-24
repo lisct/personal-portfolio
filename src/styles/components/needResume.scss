@@ -3,7 +3,12 @@
 
 .resume{
 
-    margin-top: 8rem;
+     // mobile first
+     @media (min-width: 768px) {
+
+        margin-top: 8rem;
+            
+    }
 
     &__title, &__description{
 

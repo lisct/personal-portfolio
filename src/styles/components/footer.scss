@@ -29,17 +29,23 @@
 
             }
 
+            &--social{
+                
+                margin-top: -14px;
+
+            }
+
         }
 
         &__tittle, &__info{
 
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         
         }
 
         &__tittle{
 
-            color: lighten(#d9eaf4, 1% );
+            color: lighten($darker, 20% );
 
         }
 
@@ -220,7 +226,7 @@
             // line to move
             .footer_explore--line:before{
 
-                height: 60px;  
+                height: 57px;  
                 background: white;      
 
             }
