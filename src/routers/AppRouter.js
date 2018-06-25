@@ -18,7 +18,7 @@ class AppRouter extends React.Component{
     componentDidMount() {
 
         // simulates loading of data
-        setTimeout(() => this.setState({ isLoading: false }), 2200); 
+        //setTimeout(() => this.setState({ isLoading: false }), 2200); 
 
     }
       
