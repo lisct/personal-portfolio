@@ -18,9 +18,12 @@ const NeedResume = () => (
                         <div className="row center-xs">
                             <div className="col-xs-12 col-sm-9 col-md-6">
                                 <div className="box">  
-                                <div>
-                                        <Buttons copy={"Download Resume"}/>
-                                        </div>
+                                    <div className="btn btn--round btn--small resume__cta"> 
+                                        <a href="doc/resume_lisbelcruz.pdf" target="_blank">
+                                           Download Resume
+                                            <span className="btn__icon"></span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -33,3 +36,5 @@ const NeedResume = () => (
 )
 
 export default NeedResume
+
+

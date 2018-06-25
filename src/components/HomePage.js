@@ -150,6 +150,7 @@ class HomePage extends React.Component{
         return(
            
             <Fragment>
+
                 {/* //  Chek if you are in the login route, then show the loggin btn*/}
                 {(this.props.location.pathname == '/login') && 
                     <Login 
@@ -162,6 +163,7 @@ class HomePage extends React.Component{
                 }
 
                 <Hero />
+
                 <Portfolio 
                     portfolioItems={ this.state.portfolioItems }
                 />
@@ -178,6 +180,7 @@ class HomePage extends React.Component{
                 }
 
                 <NeedResume />
+
             </Fragment>
             
         )
