@@ -17,14 +17,14 @@ class AppRouter extends React.Component{
 
     componentDidMount() {
 
-        // simulates loading of data
-        //setTimeout(() => this.setState({ isLoading: false }), 2200); 
+        // waiting for loader to animate. Loading complete when var is set to false. 
+        setTimeout(() => this.setState({ isLoading: false }), 2200); 
 
     }
       
     render(){
 
-        // loader
+        // Loader
         const { isLoading } = this.state;
 
         if(isLoading) {

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 // stateless function doesn't need this.props.tag for example just use props.tag
 const Header = () => ( 
-
     <header className="wrap container-fluid">
         <div className="row  middle-xs">
             <div className="col-xs-3 col-sm-7">

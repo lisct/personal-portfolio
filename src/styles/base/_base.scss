@@ -12,6 +12,8 @@ html {
   color: $darker;
   font-family: $font-main;
   letter-spacing: 0.04rem;
+  max-width: 100%;
+  overflow-x: hidden;
 
 }
 
@@ -19,7 +21,19 @@ body {
 
   font-size: 1.5rem; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 400; 
+
+  // mouse cursor
+
+  cursor: url("/images/pointer/mouse_pointer@1x.png") 1 1, auto !important;
+  cursor: -webkit-image-set(url("/images/pointer/mouse_pointer@1x.png") 1x, url("/images/pointer/mouse_pointer@2x.png") 2x) 0 0,pointer !important;
+
+  a:hover, button:hover, .btn:hover, .explore:hover{
+
+    cursor: url("/images/mouse_pointer@1x.png") 1 1, auto !important;
+    cursor: -webkit-image-set(url("/images/pointer/mouse_pointer_hover@1x.png") 1x, url("/images/pointer/mouse_pointer_hover@2x.png") 2x) 0 0,pointer !important;
+
+  }
 
 }
 

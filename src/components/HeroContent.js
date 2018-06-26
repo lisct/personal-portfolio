@@ -1,7 +1,15 @@
 import React from 'react';
 import { Fragment } from 'react';
+import TweenLite from 'gsap';
+import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
 
 class HeroContent extends React.Component{
+
+    handleScrollTo = () => {
+
+        TweenLite.to(window, .5, { scrollTo: window.innerHeight } );
+
+    }
     
     render(){
 
@@ -18,7 +26,7 @@ class HeroContent extends React.Component{
                     </h1>
                 </div>
 
-                <div className="hero_explore">
+                <div className="hero_explore explore" onClick={this.handleScrollTo}>
                     <h5 className="hero_explore--text">Explore</h5>
                     <span className="hero_explore--line"></span>
                     <span className="hero_explore--fill"></span>
