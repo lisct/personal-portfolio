@@ -7,7 +7,7 @@ const Header = () => (
         <div className="row  middle-xs">
             <div className="col-xs-3 col-sm-7">
                 <div className="box">
-                    <Link to="/">
+                    <Link to="/" className="logo__interaction">
                         <svg className="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.95 91.17">
                             <defs>
                                 <clipPath id="clip-path"><path className="cls-1" d="M12.83,43.63,33.58,91.17H99.67a11.67,11.67,0,0,0,0-23.34H87.07L64.12,49.62A18.61,18.61,0,0,1,61.9,58.7c-6.24,10.9-21.83,11-30.72,3.49-8.65-7.26-7.94-18.55-7.94-28.76Z"/></clipPath>

@@ -33,7 +33,7 @@ class Footer extends React.Component{
                         </div>
                     
                         <div className="col-xs-12 col-sm-6">
-                            <div className="box box--center footer__item">
+                            <div className="box box--center footer__item footer__item--msj">
                                 <h1 className="footer__item__header">Let’s Work Together</h1>
                             </div>
                         </div>
@@ -41,12 +41,12 @@ class Footer extends React.Component{
                         <div className="col-xs-12 col-sm-3">
                             <div className="box footer__item footer__item--left footer__item--social">
                                 <h4 className="footer__item__tittle">Follow Me</h4>
-                                <p className="footer__item__info"><a href="#">Behance</a></p>
-                                <p className="footer__item__info"><a href="#">Dribble</a></p>
-                                <p className="footer__item__info"><a href="#">Github</a></p>
-                                <p className="footer__item__info"><a href="#">Instagram</a></p>
-                                <p className="footer__item__info"><a href="#">Twitter</a></p>
-                                <p className="footer__item__info"><a href="#">Linkedin</a></p>
+                                <p className="footer__item__info"><a href="https://www.behance.net/LisCT" target="_black">Behance</a></p>
+                                <p className="footer__item__info"><a href="https://dribbble.com/LisCT" target="_black">Dribble</a></p>
+                                <p className="footer__item__info"><a href="https://github.com/LisCT" target="_black">Github</a></p>
+                                <p className="footer__item__info"><a href="https://www.instagram.com/lisccode/" target="_black">Instagram</a></p>
+                                <p className="footer__item__info"><a href="https://twitter.com/lisct" target="_black">Twitter</a></p>
+                                <p className="footer__item__info"><a href="https://www.linkedin.com/in/lisct/" target="_black">Linkedin</a></p>
                             </div>
                         </div>
 

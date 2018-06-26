@@ -30,6 +30,12 @@ header{
   .cls-5{fill:#c0e4f7;}
   .cls-6{fill:#8dd6ef;}
 
+  &__interaction{
+
+    padding: 38px 0 13px 0;
+
+  }
+
 }
 
   
@@ -48,6 +54,12 @@ header{
     width: 1.7rem;
     transform: scale(1);
     transition: all .3s;
+
+    a{
+
+      padding: 7px;
+    
+    }
 
     .cls-1{
 
