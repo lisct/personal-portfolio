@@ -14,6 +14,7 @@ class EditPortfolioForm extends React.Component{
                 tech: PropTypes.string, 
                 status: PropTypes.string, 
                 name: PropTypes.string, 
+                url: PropTypes.string, 
                 desc: PropTypes.string, 
                 image: PropTypes.string
             
@@ -46,14 +47,14 @@ class EditPortfolioForm extends React.Component{
 
     render(){
 
-        const { date, tech, status, name, desc, image } = this.props.portfolioItems;
+        const { date, tech, status, name, url, desc, image } = this.props.portfolioItems;
 
         return(
 
             <div>
                 
                 <div className="row">
-                    <div className="col-xs-12">
+                    <div className="col-xs-6">
                         <div className="box">
                             <input 
                                 type="text" 
@@ -63,7 +64,20 @@ class EditPortfolioForm extends React.Component{
                             />
                         </div>
                     </div>
+
+                    <div className="col-xs-6">
+                        <div className="box">
+                            <input 
+                                type="text" 
+                                name="url" 
+                                value={url} 
+                                onChange={ this.handleChange }
+                            />
+                        </div>
+                    </div>
                 </div>
+
+                
 
                 <div className="row">
                     <div className="col-xs-6">

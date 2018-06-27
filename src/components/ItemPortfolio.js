@@ -14,6 +14,7 @@ class ItemPortfolio extends React.Component{
                 tech: PropTypes.string, 
                 status: PropTypes.string, 
                 name: PropTypes.string, 
+                url: PropTypes.string, 
                 desc: PropTypes.string, 
                 image: PropTypes.string
             
@@ -27,7 +28,7 @@ class ItemPortfolio extends React.Component{
 
     render(){
     
-        const { date, tech, status, name, desc, image } = this.props.itemDetails;
+        const { date, tech, status, name, url, desc, image } = this.props.itemDetails;
         const isAvailable =  status === "available";
 
         return(
@@ -37,7 +38,7 @@ class ItemPortfolio extends React.Component{
                     <div className="box portfolio_project__wrapper">
 
     
-                        <a href="#" target="_blank" className="portfolio_project">
+                        <a href={url} target="_blank" className="portfolio_project">
 
                             <div className="col-xs-11 col-sm-8 col-md-6">
                                 <div className="portfolio_project__image">

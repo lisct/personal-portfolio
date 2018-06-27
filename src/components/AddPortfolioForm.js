@@ -14,6 +14,7 @@ class AddPortfolioForm extends React.Component{
     techRef = React.createRef();
     statusRef = React.createRef();
     nameRef = React.createRef();
+    urlRef = React.createRef();
     descRef = React.createRef();
     imageRef = React.createRef();
 
@@ -27,6 +28,7 @@ class AddPortfolioForm extends React.Component{
             tech: this.techRef.current.value, 
             status: this.statusRef.current.value, 
             name: this.nameRef.current.value, 
+            url: this.nameRef.current.value, 
             desc: this.descRef.current.value, 
             image: this.imageRef.current.value
         }
@@ -44,9 +46,14 @@ class AddPortfolioForm extends React.Component{
             <form className="portfolio_editor--form pb-medium" onSubmit={ this.createPortfolioItem }>
 
                 <div className="row">
-                    <div className="col-xs-12">
+                    <div className="col-xs-6">
                         <div className="box">
                             <input type="text" name="name" ref={this.nameRef} placeholder="Name" />
+                        </div>
+                    </div>
+                    <div className="col-xs-6">
+                        <div className="box">
+                            <input type="text" name="url" ref={this.urlRef} placeholder="Url" />
                         </div>
                     </div>
                 </div>
