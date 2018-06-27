@@ -5,6 +5,8 @@
 /public/js
 /src/base.js
 .vscode
+.firebaserc
+firebase.json
 
 #OS junk files
 [Tt]humbs.db
