@@ -77,11 +77,22 @@ h1{
 
 }
 
-.header_main{
+.header_main, .header_section{
 
   text-align: center;
   color: $blue-dark;
+  
+}
+
+.header_main{
+
   padding: 8rem 0;
+  
+}
+
+.header_section{
+
+  padding-top: 8rem;
 
 }
 
@@ -218,6 +229,23 @@ input, select, textarea, .btn, a{
   &--round{
 
     border-radius: 3px;
+
+  }
+
+  &--border{
+
+    background: none;
+    border: 2px solid #eaedef;
+    color: $blue-dark;
+    border-radius: 5px;
+    padding: 11px;
+
+    &:hover{
+
+      color:  white;
+      border-color: $blue-dark;
+
+    }
 
   }
   

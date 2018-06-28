@@ -6,33 +6,33 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
-import ProjectYummy from '../components/ProjectYummy';
+import ProjectChallenge from '../components/ProjectChallenge';
 
 class AppRouter extends React.Component{
 
-    state = {
+    // state = {
 
-        isLoading: true
+    //     isLoading: true
 
-    }
+    // }
 
-    componentDidMount() {
+    // componentDidMount() {
 
-        // waiting for loader to animate. Loading complete when var is set to false. 
-        setTimeout(() => this.setState({ isLoading: false }), 2200); 
+    //     // waiting for loader to animate. Loading complete when var is set to false. 
+    //     setTimeout(() => this.setState({ isLoading: false }), 2200); 
 
-    }
+    // }
       
     render(){
 
         // Loader
-        const { isLoading } = this.state;
+        // const { isLoading } = this.state;
 
-        if(isLoading) {
+        // if(isLoading) {
 
-            return null;
+        //     return null;
             
-        }
+        // }
 
         return (
             <BrowserRouter >
@@ -43,7 +43,7 @@ class AppRouter extends React.Component{
                     <Switch>
                         <Route path="/" component={ HomePage } exact={true}/>
                         <Route path="/:login" component={ HomePage } exact={true}/>
-                        <Route path="/project/yummy" component={ ProjectYummy } exact={true}/>
+                        <Route path="/project/challenges" component={ ProjectChallenge } exact={true}/>
                         <Route component={NotFoundPage} />
                     </Switch>
                     

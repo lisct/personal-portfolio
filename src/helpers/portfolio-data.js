@@ -3,11 +3,11 @@ const startedPortfolioItems = {
 
   item01: {
 
-    name: "React Markdown Viewer",
+    name: "Challenges Projects",
     image: "/images/img_sample@2x.png",
     desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-    date: "May 2017",
+      "This is a collection of challenches that I accomplished in my way to learn, to practice and the most common reason to be doing something :)",
+    date: "2017 / Present",
     tech: "React, Html, Css",
     status: "available"
 
@@ -15,23 +15,23 @@ const startedPortfolioItems = {
 
   item02: {
 
-    name: "Yummy Katy",
+    name: "Padsquad",
     image: "/images/img_sample@2x.png",
     desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-    date: "February 2017",
-    tech: "Illustrator, Photoshop",
+      "This is a group of projects that I've been working as a developer inside the company. As a part of the company I had to work with html, css, javascript, react, responsive experience and others.",
+    date: "2016 / present",
+    tech: "Html, CSS, Javascript, React",
     status: "available"
 
   },
-  
+
   item03: {
 
-    name: "Seasons",
+    name: "Yummy Katy",
     image: "/images/img_sample@2x.png",
     desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-    date: "October 2015",
+      "The main task was to create a branding + UI/UX Design for a website. The propose of the project was to develop a brand that can be used in social network oriented to share recommendations about food, restaurants, drinks, deserts, etc. ",
+    date: "August  2017",
     tech: "Illustrator, Photoshop",
     status: "inactive"
 

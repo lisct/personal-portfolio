@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import TweenLite from 'gsap';
+import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
 
 class ItemPortfolio extends React.Component{
 
@@ -26,6 +29,12 @@ class ItemPortfolio extends React.Component{
 
     } 
 
+    handleScrollToTop = () => {
+
+        TweenLite.to(window, .4, { scrollTo: 0 } );
+
+    }
+
     render(){
     
         const { date, tech, status, name, url, desc, image } = this.props.itemDetails;
@@ -38,7 +47,7 @@ class ItemPortfolio extends React.Component{
                     <div className="box portfolio_project__wrapper">
 
     
-                        <a href={url} target="_blank" className="portfolio_project">
+                        <Link to={`${url}`} onClick={this.handleScrollToTop} className="portfolio_project">
 
                             <div className="col-xs-11 col-sm-8 col-md-6">
                                 <div className="portfolio_project__image">
@@ -69,7 +78,7 @@ class ItemPortfolio extends React.Component{
 
                             </div>
 
-                        </a> 
+                        </Link> 
 
                     </div>
                 </div>
