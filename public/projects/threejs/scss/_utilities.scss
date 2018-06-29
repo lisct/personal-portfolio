@@ -1,0 +1,67 @@
+//=================================================================
+// Utilities
+//=================================================================
+
+
+// Import f google Fonts URL is defined
+
+@if variable-exists($font-url--google){
+  @import url($font-url--google);
+}
+
+// Calculate em values
+
+@function em($target, $context: $base__font-size){
+  @return ($target / $context) * 1em;
+}
+
+// call the color palette modifiers (config)
+
+@function palette($palette, $shade: 'base'){
+    
+    @return  map-get(map-get($palettes, $palette), $shade);
+    
+}
+
+// Mixins
+
+//for bg buttons (config)
+@mixin bg-colors($map){
+    
+    @each $theme, $color in $map{
+        &-#{$theme} {
+            background-color: $color;
+        }
+    }  
+    
+}
+
+
+//for background images
+@mixin img-replace($img, $w: null, $h: null, $disp: null){
+    
+    background-image: url('#{$path--rel}/#{$img}');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: $w;
+    height: $h;
+    display: $disp;
+    
+}
+
+
+// BEN selectors
+
+@mixin e($element){
+    &__#{$element}{
+        @content;
+    }
+}
+
+@mixin m($modifier){
+    &--#{$modifier}{
+        @content;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>02 Clock css - js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <section id="project-content" class="full-height">
+            <div class="container">
+
+                <!-- Header -->
+                <h1 class="project_title">What time is it?</h1>
+
+                <!-- main content -->
+                <div class="clock">
+                    <div class="number number_position--top"></div>
+                    <div class="number number_position--right"></div>
+                    <div class="number number_position--bottom"></div>
+                    <div class="number number_position--left"></div>
+
+                    <div class="hand hand_hour"></div>
+                    <div class="hand hand_minutes"></div>
+                    <div class="hand hand_seconds"></div>
+
+                    <div class="point"></div>
+                    <div class="point_bigger"></div>
+                    <div class="point_bigger--med"></div>
+                    <div class="point_bigger--lg"></div>
+                </div>
+
+                <div class="digital_clock">
+                    <p>00:00:00 --</p>
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <section class="copyright">
+                <p>
+                    <span>
+                        <br/>Photo by
+                        <span class="copyright_author">Ingridi Alves</span> photograph on
+                        <a class="copyright_link" href="https://unsplash.com/photos/yePWDGPUWO0" target="_blank"> Unsplash </a>
+                    </span>
+                </p>
+            </section>
+
+
+        </section>
+
+    </div>
+
+    <script>
+        // global vars
+        const handHours = document.querySelector('.hand_hour');
+        const handMinutes = document.querySelector('.hand_minutes');
+        const handSeconds = document.querySelector('.hand_seconds');
+        const hand = document.querySelector('.hand');
+        const digitalClock = document.querySelector('.digital_clock p');
+        const cauthor = document.querySelector('.copyright_author');
+        const chref = document.querySelector('.copyright_link');
+        const greeting = document.querySelector('.project_title');
+        const bg = document.querySelector('.wrapper');
+
+        function updateDate() {
+
+            // getting time info
+            const time = new Date();
+            const hours = time.getHours();
+            const minutes = time.getMinutes();
+            const seconds = time.getSeconds();
+
+            // getting minutes with two digit for the digital clock
+            const minutesDigital = (time.getMinutes() < 10 ? '0' : '') + time.getMinutes();
+            const secondsDigital = (time.getSeconds() < 10 ? '0' : '') + time.getSeconds();
+            const noon = new Date(time.getFullYear(), time.getMonth(), time.getDate(), 12, 0, 0);
+            const ampm = (time.getTime() < noon.getTime()) ? 'am' : 'pm';
+            digitalClock.innerHTML = hours + ':' + minutesDigital + ':' + secondsDigital + ' ' + ampm;
+
+            // converting time into degress
+            const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
+            const minutesDegrees = ((minutes / 60) * 360) + 90;
+            const secondsDegrees = ((seconds / 60) * 360) + 90;
+
+            // adding the defrees to the hands of the clock
+            handHours.style.transform = `rotate(${hoursDegrees}deg)`;
+            handMinutes.style.transform = `rotate(${minutesDegrees}deg)`;
+            handSeconds.style.transform = `rotate(${secondsDegrees}deg)`;
+
+            // avoid jumping hand when the minutes resets 
+            if (secondsDegrees == 444) {
+                hand.style.transition = 'unset';
+            } else {
+                hand.style.transition = 'all 0.05s';
+            };
+
+            // change background and info depends of part of the day
+            if (hours >= 6 && hours < 12) {
+
+                //morning
+                dinamicInfo('url(img/morning.jpg) center white no-repeat', 'Good Morning', 'Zwaddi',
+                    "https://unsplash.com/photos/YvYBOSiBJE8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                );
+
+            } else if (hours >= 12 && hours < 17) {
+
+                //afternoon
+                dinamicInfo('url(img/afternoon.jpg) center white no-repeat', 'Good Afternoon', 'Alvin Balemesa',
+                    "https://unsplash.com/photos/lJstr7OYCoM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                );
+
+            } else if (hours >= 17 && hours < 21) {
+
+                //evening
+                dinamicInfo('url(img/evening.jpg) center white no-repeat', 'Good Evening', 'Kai Dörner',
+                    "https://unsplash.com/photos/ji0RVgiTd-E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                );
+
+            } else {
+
+                //night
+                dinamicInfo('url(img/night.jpg) center white no-repeat', 'Good Night', 'Irina Blok',
+                    "https://unsplash.com/photos/M-ry6MXCbek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                );
+
+            }
+
+
+        }
+
+        // function to change the info of the page
+        function dinamicInfo(bgurl, greet, author, href) {
+
+            bg.style.background = bgurl;
+            greeting.innerHTML = greet;
+            cauthor.innerHTML = author;
+            chref.setAttribute("href", href);
+
+        }
+
+        setInterval(updateDate, 1000);
+
+        updateDate();
+    </script>
+
+</body>
+
+</html>
