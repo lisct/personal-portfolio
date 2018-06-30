@@ -55,14 +55,14 @@
         position: absolute;
         width: 100%;
         height: 70px;
-        background-image: url("/images/img_sample@2x.png");
-        background-position: bottom;
+        background-image: url("/images/challenge@2x.jpg");
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #f1f3f5;
         top: 0;
         left: 0;
-        opacity: 0.5;
+        opacity: .1;
     }
 
     &__circle{

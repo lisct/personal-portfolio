@@ -8,7 +8,8 @@
     "server": "live-server public",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "dev-deploy": "firebase deploy"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
