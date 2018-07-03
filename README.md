@@ -43,10 +43,17 @@ yarn run build:prod or npm run build:prod
 ```
 
 
-## Production
+## Deploy
 
 ```bash
-This project has been deploy on firebase. Be sure to edit the .firebaserc before deploying.
+This project has been deployed on firebase. Be sure to edit the .firebaserc before deploying.
+```
+
+
+## Analytics
+
+```bash
+Google Analytics general tag and custom tracker has been added.
 ```
 
 
@@ -75,6 +82,7 @@ This project has been deploy on firebase. Be sure to edit the .firebaserc before
 * "re-base": "^3.2.3",
 * "react": "^16.4.0",
 * "react-dom": "^16.4.0",
+* "react-ga": "^2.5.3",
 * "react-router-dom": "4.2.2",
 * "sass-loader": "6.0.6",
 * "style-loader": "0.18.2",
