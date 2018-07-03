@@ -7,6 +7,12 @@ import Footer from '../components/Footer';
 import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
 import ProjectChallenge from '../components/ProjectChallenge';
+import ProjectPadsquad from '../components/ProjectPadsquad';
+
+//Tracker
+import tracker from '../helpers/tracker';
+
+
 
 class AppRouter extends React.Component{
 
@@ -41,10 +47,11 @@ class AppRouter extends React.Component{
                     <Header />
                     
                     <Switch>
-                        <Route path="/" component={ HomePage } exact={true}/>
-                        <Route path="/:login" component={ HomePage } exact={true}/>
-                        <Route path="/project/challenges" component={ ProjectChallenge } exact={true}/>
-                        <Route component={NotFoundPage} />
+                        <Route path="/" component={ tracker(HomePage) } exact={true}/>
+                        <Route path="/:login" component={ tracker(HomePage) } exact={true}/>
+                        <Route path="/project/challenges" component={ tracker(ProjectChallenge) } exact={true}/>
+                        <Route path="/project/padsquad" component={ tracker(ProjectPadsquad) } exact={true}/>
+                        <Route component={tracker(NotFoundPage)} />
                     </Switch>
                     
                     <Footer />

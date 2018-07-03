@@ -42,6 +42,14 @@ Run Build (Compile Public folder)
 yarn run build:prod or npm run build:prod
 ```
 
+
+## Production
+
+```bash
+This project has been deploy on firebase. Be sure to edit the .firebaserc before deploying.
+```
+
+
 ## Packages
 
 * "babel-cli": "6.24.1",
@@ -56,15 +64,18 @@ yarn run build:prod or npm run build:prod
 * "css-loader": "0.28.4",
 * "extract-text-webpack-plugin": "3.0.0",
 * "file-loader": "^1.1.11",
+* "firebase": "^5.0.4",
+* "firebase-tools": "^3.19.0",
 * "flexboxgrid": "^6.3.1",
+* "gsap": "^2.0.1",
 * "live-server": "^1.2.0",
 * "node-sass": "^4.9.0",
 * "normalize.css": "7.0.0",
 * "prop-types": "^15.6.1",
+* "re-base": "^3.2.3",
 * "react": "^16.4.0",
 * "react-dom": "^16.4.0",
 * "react-router-dom": "4.2.2",
-* "react-transition-group": "^2.3.0",
 * "sass-loader": "6.0.6",
 * "style-loader": "0.18.2",
 * "url-loader": "^1.0.1",

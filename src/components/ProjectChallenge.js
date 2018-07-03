@@ -27,7 +27,7 @@ const ProjectChallenge = () => (
                                 <a href="/projects/yummyCoupon/index.html" target="_blank">
                                     <div className="project__circle"></div>
 
-                                    <div className="project__img"></div>
+                                    <div className="project__img challenges"></div>
 
                                     <div className="portfolio_project__tech">
                                         React, Html, Css
@@ -57,7 +57,7 @@ const ProjectChallenge = () => (
                                 <a href="https://codesandbox.io/s/7mp5w4j26" target="_blank">
                                     <div className="project__circle"></div>
 
-                                    <div className="project__img"></div>
+                                    <div className="project__img challenges"></div>
 
                                     <div className="portfolio_project__tech">
                                         React, Html, Css
@@ -87,7 +87,7 @@ const ProjectChallenge = () => (
                                 <a href="/projects/css-js-clock/index.html" target="_blank">
                                     <div className="project__circle"></div>
 
-                                    <div className="project__img"></div>
+                                    <div className="project__img challenges"></div>
 
                                     <div className="portfolio_project__tech">
                                         Html, Css, Javascript
@@ -117,7 +117,7 @@ const ProjectChallenge = () => (
                                 <a href="/projects/drum-kit/index.html" target="_blank">
                                     <div className="project__circle"></div>
 
-                                    <div className="project__img"></div>
+                                    <div className="project__img challenges"></div>
 
                                     <div className="portfolio_project__tech">
                                         Html, Css, Javascript
@@ -147,7 +147,7 @@ const ProjectChallenge = () => (
                                 <a href="/projects/threejs/index.html" target="_blank">
                                     <div className="project__circle"></div>
 
-                                    <div className="project__img"></div>
+                                    <div className="project__img challenges"></div>
 
                                     <div className="portfolio_project__tech">
                                         Html, Css, Javascript
@@ -177,7 +177,7 @@ const ProjectChallenge = () => (
                                 <a href="/projects/gravity-canvas/index.html" target="_blank">
                                     <div className="project__circle"></div>
 
-                                    <div className="project__img"></div>
+                                    <div className="project__img challenges"></div>
 
                                     <div className="portfolio_project__tech">
                                         Html, Css, Javascript

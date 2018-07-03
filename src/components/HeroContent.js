@@ -2,12 +2,19 @@ import React from 'react';
 import { Fragment } from 'react';
 import TweenLite from 'gsap';
 import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
+import ReactGA from 'react-ga';
 
 class HeroContent extends React.Component{
 
     handleScrollTo = () => {
 
         TweenLite.to(window, .5, { scrollTo: window.innerHeight } );
+
+        //Tracker
+        ReactGA.event({
+            category: 'Navigation',
+            action: 'explore',
+        });
 
     }
     
