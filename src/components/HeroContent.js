@@ -8,8 +8,8 @@ class HeroContent extends React.Component{
 
     handleScrollTo = () => {
 
-        TweenLite.to(window, .5, { scrollTo: window.innerHeight } );
-
+        TweenLite.to(window, .5, { scrollTo: window.innerHeight} );
+        
         //Tracker
         ReactGA.event({
             category: 'Navigation',

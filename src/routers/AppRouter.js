@@ -8,11 +8,10 @@ import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
 import ProjectChallenge from '../components/ProjectChallenge';
 import ProjectPadsquad from '../components/ProjectPadsquad';
+import ProjectLogos from '../components/ProjectLogos';
 
 //Tracker
 import tracker from '../helpers/tracker';
-
-
 
 class AppRouter extends React.Component{
 
@@ -51,6 +50,7 @@ class AppRouter extends React.Component{
                         <Route path="/:login" component={ tracker(HomePage) } exact={true}/>
                         <Route path="/project/challenges" component={ tracker(ProjectChallenge) } exact={true}/>
                         <Route path="/project/padsquad" component={ tracker(ProjectPadsquad) } exact={true}/>
+                        <Route path="/project/logo-collection" component={ tracker(ProjectLogos) } exact={true}/>
                         <Route component={tracker(NotFoundPage)} />
                     </Switch>
                     

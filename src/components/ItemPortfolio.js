@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import TweenLite from 'gsap';
-import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
 import ReactGA from 'react-ga';
 
 class ItemPortfolio extends React.Component{
@@ -32,8 +30,12 @@ class ItemPortfolio extends React.Component{
 
     handleScrollToTop = () => {
 
-        TweenLite.to(window, .4, { scrollTo: 0 } );
-
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        
+ 
         // Tracker event
         ReactGA.event({
             category: 'Navigation',
