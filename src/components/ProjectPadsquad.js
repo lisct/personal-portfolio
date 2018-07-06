@@ -1,12 +1,13 @@
 import React from 'react';
+import BackButton from './base/BackButton';
 
 const ProjectPadsquad = () => (
 
     <section className="project">
 
         <div className="wrap container-fluid">      
-            <div className="row center-xs">
-                <div className="col-xs-6">
+            <div className="row center-xs project__row_container">
+                <div className="col-xs-9 col-md-6">
                     <div className="box project__header">
                         <h1 className="header_section">Padsquad Projects</h1>
                         <p>This is a collection of projects that I worked in padsquad as a Senior Mobile Ad Developer. PadSquad LLC All Rights Reserved.</p>
@@ -22,6 +23,9 @@ const ProjectPadsquad = () => (
 
                     </div>
                 </div>
+
+                <BackButton />
+
             </div>
         </div>
 

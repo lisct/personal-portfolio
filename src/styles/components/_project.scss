@@ -14,7 +14,13 @@
 
     &__header{
 
-        padding: 10rem 0;
+        padding: 10rem 0 16rem 0;
+
+    }
+
+    &__row_container{
+
+        position: relative;
 
     }
 
@@ -106,6 +112,13 @@
         width: 28px;
         z-index: 9;
 
+    }
+
+    .hero_explore {
+
+        left: 9%;
+        text-align: left;
+    
     }
 
 }

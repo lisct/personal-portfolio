@@ -5,12 +5,6 @@
 // html is set to 62.5% so that all the REM measurements throughout Skeleton
 // are based on 10px sizing. So basically 1.5rem = 15px :)
 
-html, body{
-
-  overflow-x: hidden;
-
-}
-
 html {
 
   font-size: 62.5%;
@@ -19,7 +13,8 @@ html {
   font-family: $font-main;
   letter-spacing: 0.04rem;
   max-width: 100%;
-
+  overflow-x: hidden;
+  
 }
 
 body {
@@ -27,6 +22,7 @@ body {
   font-size: 1.5rem; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
   font-weight: 400; 
+  overflow-x: hidden;
 
   // mouse cursor
   cursor: url("/images/pointer/mouse_pointer@1x.png") 1 1, auto !important;

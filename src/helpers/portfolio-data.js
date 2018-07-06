@@ -4,11 +4,11 @@ const startedPortfolioItems = {
   item01: {
 
     name: "Challenges Projects",
-    image: "/images/img_sample@2x.png",
-    desc:
-      "This is a collection of challenches that I accomplished in my way to learn, to practice and the most common reason to be doing something :)",
+    image: "/images/challenge@2x.jpg",
+    desc:"This is a collection of challenges that I accomplished in my way to learn, to practice and the most common reason to be doing something :)",
     date: "2017 / Present",
-    tech: "React, Html, Css",
+    tech: "Html, CSS, Javascript, React",
+    url: "/project/challenges",
     status: "available"
 
   },
@@ -16,24 +16,24 @@ const startedPortfolioItems = {
   item02: {
 
     name: "Padsquad",
-    image: "/images/img_sample@2x.png",
-    desc:
-      "This is a group of projects that I've been working as a developer inside the company. As a part of the company I had to work with html, css, javascript, react, responsive experience and others.",
+    image: "/images/padsquad@2x.jpg",
+    desc:"This is a group of projects that I've been working as a developer inside the company. My main focus has been around technologies like: html, css, javascript, react, responsive experience, Celtra and others.",
     date: "2016 / present",
     tech: "Html, CSS, Javascript, React",
+    url: "/project/padsquad",
     status: "available"
 
   },
 
   item03: {
 
-    name: "Yummy Katy",
-    image: "/images/img_sample@2x.png",
-    desc:
-      "The main task was to create a branding + UI/UX Design for a website. The propose of the project was to develop a brand that can be used in social network oriented to share recommendations about food, restaurants, drinks, deserts, etc. ",
-    date: "August  2017",
-    tech: "Illustrator, Photoshop",
-    status: "inactive"
+    name: "Logo Collection",
+    image: "/images/logos@2x.jpg",
+    desc:"This is a group of different logos design. Each logo has a specific purpose; for a bar, an agency, a tech company, etc. I design each one based in the design process: main purpose, selection of the color, typography and form.",
+    date: "2015 / present",
+    tech: "Illustrator",
+    url: "/project/logos",
+    status: "available"
 
   }
 

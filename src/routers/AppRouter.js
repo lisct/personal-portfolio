@@ -50,10 +50,10 @@ class AppRouter extends React.Component{
                         <Route path="/:login" component={ tracker(HomePage) } exact={true}/>
                         <Route path="/project/challenges" component={ tracker(ProjectChallenge) } exact={true}/>
                         <Route path="/project/padsquad" component={ tracker(ProjectPadsquad) } exact={true}/>
-                        <Route path="/project/logo-collection" component={ tracker(ProjectLogos) } exact={true}/>
+                        <Route path="/project/logos" component={ tracker(ProjectLogos) } exact={true}/>
                         <Route component={tracker(NotFoundPage)} />
                     </Switch>
-                    
+
                     <Footer />
                     
                 </Fragment>

@@ -1,17 +1,22 @@
 import React from 'react';
+import BackButton from './base/BackButton';
 
 const ProjectChallenge = () => (
 
     <section className="project">
 
         <div className="wrap container-fluid">      
-            <div className="row center-xs">
-                <div className="col-xs-6">
+            <div className="row center-xs project__row_container">
+                <div className="col-xs-9 col-md-6">
                     <div className="box project__header">
                         <h1 className="header_section">Challenges Projects</h1>
                         <p>This is a collection of challenges that I accomplished in my way to learn, to practice and the most common reason to be doing something :)</p>
+                        
                     </div>
                 </div>
+
+                 <BackButton />
+                 
             </div>
         </div>
 
