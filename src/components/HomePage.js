@@ -1,6 +1,8 @@
 import React from 'react';
 import { Fragment } from 'react';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
 
 import Login from '../components/Login';
 import Hero from '../components/Hero';
@@ -17,6 +19,7 @@ import base, { firebaseApp } from '../base';
 // Inside the database after you logged, will be add a owner obj inside the database. If delete the access will be revoked.
 // You also need a document with all the settings to acces to firebase apiKey, authDomain, databaseURL is what I imported from base
 // This document is not included in this project. It's something that you should set.
+//The login live in the url /login
 
 class HomePage extends React.Component{
 

@@ -12,6 +12,19 @@
 
     }
 
+    .box{
+
+        height: 100%;
+
+        &--height{
+
+            margin-bottom: 11.3rem;
+
+        }
+
+    }
+
+
     &__header{
 
         padding: 10rem 0 16rem 0;
@@ -46,10 +59,11 @@
         box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.28);
         margin-bottom: 8rem;
         overflow: hidden;
-        padding: 12rem 4rem 6rem 4rem;
+        padding: 12rem 4rem 0rem 4rem;
         position: relative;
         border-radius: 5px;
         transition: all .3s ease-in-out;
+        height: 100%;
         
         &:hover { 
             
@@ -84,6 +98,12 @@
         top: 0;
         left: 0;
         opacity: .1;
+    }
+
+    .btn{
+
+        margin-top: 6rem;
+
     }
 
     .challenges{
