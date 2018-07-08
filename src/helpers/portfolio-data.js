@@ -5,7 +5,7 @@ const startedPortfolioItems = {
 
     name: "Challenges Projects",
     image: "/images/challenge@2x.jpg",
-    desc:"This is a collection of challenges that I accomplished in my way to learn, to practice and the most common reason to be doing something :)",
+    desc:"This is a collection of challenges that I accomplished in my way to learn, to practice and the most common reason to be doing something :). The general task is to develop a project based in the tech that I've been studying.",
     date: "2017 / Present",
     tech: "Html, CSS, Javascript, React",
     url: "/project/challenges",
