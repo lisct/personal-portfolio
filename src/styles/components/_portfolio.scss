@@ -47,6 +47,9 @@
         transition: all .3s ease-in-out;
         width: 100%;
 
+        backface-visibility: hidden; // fixing a bug in chrome that move (translate) the element on hover
+        -webkit-backface-visibility: hidden;
+
     }
 
     // mobile first
@@ -69,8 +72,6 @@
         }    
                     
     }
-
-  
     
     &__info{
 
@@ -84,7 +85,6 @@
         position: absolute;
         top: 35%;
         transition: all .3s ease-in-out;
-
 
          // mobile first
         @media (min-width: 769px) {
@@ -100,7 +100,6 @@
                 
         }
 
-     
     }
 
     &__circle{

@@ -3,13 +3,14 @@ import ReactGA from 'react-ga';
 
 class NeedResume extends React.Component{
 
-    // Tracker handle
-    handleClickTracker() {
+    // Tracker
+    handleClickTracker = () => {
 
         ReactGA.event({
             category: 'Navigation',
             action: 'Download Resume',
         });
+
     }
 
     render(){
@@ -31,14 +32,16 @@ class NeedResume extends React.Component{
                             <div className="box">  
                                 <div className="row center-xs">
                                     <div className="col-xs-12 col-sm-9 col-md-6">
-                                        <div className="box">  
-                                            <div className="btn btn--round btn--small resume__cta"> 
-                                                <a href="doc/resume_lisbelcruz.pdf" target="_blank" onClick={this.handleClickTracker}>
-                                                Download Resume
-                                                    <span className="btn__icon"></span>
-                                                </a>
+                                        <a href="doc/resume_lisbelcruz.pdf" target="_blank" onClick={this.handleClickTracker}>
+                                            <div className="box">  
+                                                <div className="btn btn--round btn--small resume__cta"> 
+                                                    <span>
+                                                        Download Resume
+                                                        <span className="btn__icon"></span>
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
