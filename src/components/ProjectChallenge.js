@@ -14,7 +14,12 @@ class ProjectChallenge extends React.Component{
     }
 
     handleScrollToTop = () => {
- 
+        
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
         // Tracker event
         ReactGA.event({
             category: 'Navigation',
