@@ -1,13 +1,12 @@
 import React from 'react';
+import TweenLite from 'gsap';
+import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
 
 class Footer extends React.Component{
 
     handleScrollToTop = () => {
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        TweenLite.to(window, .5, { scrollTo: window.innerHeight - window.innerHeight } );
 
     }
 

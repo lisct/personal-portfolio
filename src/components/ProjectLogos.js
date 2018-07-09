@@ -2,19 +2,19 @@ import React from 'react';
 import BackButton from './base/BackButton';
 import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
-
+import TweenLite from 'gsap';
+import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
 
 class ProjectLogos extends React.Component {
 
+    componentDidMount = () => {
+
+        TweenLite.to(window, .5, { scrollTo: window.innerHeight - window.innerHeight } );
+
+    }
+
     handleScrollToTop = () => {
 
-        //scroll to top
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-        
- 
         // Tracker event
         ReactGA.event({
             category: 'Navigation',

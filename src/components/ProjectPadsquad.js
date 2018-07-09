@@ -2,18 +2,18 @@ import React from 'react';
 import BackButton from './base/BackButton';
 import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
-
+import TweenLite from 'gsap';
+import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
 
 class ProjectPadsquad extends React.Component {
 
-    handleScrollToTop = () => {
+    componentDidMount = () => {
 
-        //scroll to top
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-        
+        TweenLite.to(window, .5, { scrollTo: window.innerHeight - window.innerHeight } );
+
+    }
+
+    handleScrollToTop = () => {
  
         // Tracker event
         ReactGA.event({
@@ -24,6 +24,7 @@ class ProjectPadsquad extends React.Component {
         // changing the page
         const page = '/project/logos';  
         this.props.history.push(page);
+        
     }
 
     render(){
