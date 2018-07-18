@@ -1,0 +1,40 @@
+// Not Found
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+.notFound{
+
+    height: 100vh;
+
+    .project__header{
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    
+        .header_section{
+
+            font-size: 4em;
+            margin: 0;
+            
+        }
+
+        p{
+
+            font-size: 1.4em;
+            margin: 0;
+
+        }
+
+        .btn{
+           
+            margin-top: 3rem;
+            width: 50%;
+            
+        }
+
+    }
+
+}

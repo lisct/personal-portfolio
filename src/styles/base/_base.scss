@@ -179,6 +179,12 @@ input, select, textarea, .btn, a{
   position: relative;
   width: 100%;
 
+  a{
+    
+    color:  white;
+
+  }
+  
   &:hover{
 
     background-color: darken($blue-dark, 5%);
