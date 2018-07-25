@@ -50,7 +50,7 @@ class ProjectPadsquad extends React.Component {
                                 <p>
                                     <strong>Creative direction:</strong> Jennifer Gavin & Claudio Tellez<br/>
                                     <strong>Visual Designer:</strong> Roberto Herrera<br/>
-                                    <strong>Developers:</strong> Me & Claudio Tellez<br/>
+                                    <strong>Developers:</strong> Claudio Tellez and I<br/>
                                     <strong>Copywriter:</strong> Jennifer Gavin<br/>
                                 </p>
 
