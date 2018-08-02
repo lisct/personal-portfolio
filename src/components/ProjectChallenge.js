@@ -165,7 +165,7 @@ class ProjectChallenge extends React.Component{
                                                 Drum Kit
                                             </h2>
                                             <p className="portfolio_project__description project--pbottom">
-                                                This is a Challenge part of the <strong>wesbos Javascript30</strong>. The version is fully responsive, The purpose is to press a key to heard a drum a sound.
+                                                This is a Challenge part of the <strong>wesbos Javascript30</strong>. The version is fully responsive, The purpose is to press a key to heard a drum sound.
                                             </p>
                                         </a> 
                                         

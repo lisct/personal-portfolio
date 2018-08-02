@@ -43,7 +43,7 @@ class ProjectLogos extends React.Component {
                         <div className="col-xs-9 col-md-6">
                             <div className="box project__header">
                                 <h1 className="header_section">Logo Collection</h1>
-                                <p>This is a group of different logos design. Each logo has a specific purpose; for a bar, an agency, a tech company, etc. I design each one based in the design process: main purpose, selection of the color, typography and form.</p>
+                                <p>This is a group of different logos design. Each logo has a specific purpose; for a bar, an agency, a tech company, etc. I designed each one based in the design process: main purpose, selection of the color, typography and form.</p>
                             </div>
                         </div>
 

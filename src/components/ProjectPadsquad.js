@@ -84,7 +84,7 @@ class ProjectPadsquad extends React.Component {
                                                 Ad Gallery
                                             </h2>
                                             <p className="portfolio_project__description project--pbottom">
-                                                This is a presentation of the differents projects that padsquad have accomplished. The objetive was to show a video of the unit and to be able to filter it.
+                                                This is a presentation of the differents projects that padsquad have accomplished. The objective was to show a video of the unit and to be able to filter it.
                                             </p>
                                         </a> 
                                         
