@@ -60,6 +60,16 @@ class ProjectLogos extends React.Component {
 
                                     <div className="box">
 
+                                        <img className="project__full--image" src="/images/logos/ccgiftaway@2x.jpg" alt="ccgiftaway"/>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div className="col-xs-12 col-sm-8">
+
+                                    <div className="box">
+
                                         <img className="project__full--image" src="/images/logos/30sbar@2x.jpg" alt="30sbar"/>
                                         
                                     </div>

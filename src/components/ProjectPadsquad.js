@@ -48,10 +48,9 @@ class ProjectPadsquad extends React.Component {
                                 <p>The team involved in most of the projects:</p>
 
                                 <p>
-                                    <strong>Creative direction:</strong> Jennifer Gavin & Claudio Tellez<br/>
+                                    <strong>Creative direction:</strong> Jen Gavin, Gini de la Cruz & Claudio Tellez<br/>
                                     <strong>Visual Designer:</strong> Roberto Herrera<br/>
                                     <strong>Developers:</strong> Claudio Tellez and I<br/>
-                                    <strong>Copywriter:</strong> Jennifer Gavin<br/>
                                 </p>
 
                             </div>
@@ -66,66 +65,7 @@ class ProjectPadsquad extends React.Component {
                     <div className="wrap container-fluid">   
                         <div className="row around-xs">
 
-                            <div className="col-xs-12 col-sm-5 box--height">
-
-                                <div className="box">
-
-                                    <div  className="project__container">
-                                        <a href="http://padsquad.com/ad-gallery/" target="_blank">
-                                            <div className="project__circle"></div>
-
-                                            <div className="project__img padsquad"></div>
-
-                                            <div className="portfolio_project__tech">
-                                            Html, Css, Javacript
-                                            </div>
-                                            
-                                            <h2 className="portfolio_project__title">
-                                                Ad Gallery
-                                            </h2>
-                                            <p className="portfolio_project__description project--pbottom">
-                                                This is a presentation of the differents projects that padsquad have accomplished. The objective was to show a video of the unit and to be able to filter it.
-                                            </p>
-                                        </a> 
-                                        
-                                        <a href="http://padsquad.com/ad-gallery/" target="_blank" className="btn btn--border btn--round"> View live</a>
-
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-
-                            <div className="col-xs-12 col-sm-5 box--height">
-
-                                <div className="box">
-
-                                    <div  className="project__container">
-                                        <a href="http://padsquad.com/vvital/" target="_blank">
-                                            <div className="project__circle"></div>
-
-                                            <div className="project__img padsquad"></div>
-
-                                            <div className="portfolio_project__tech">
-                                            Html, Css, Javacript
-                                            </div>
-                                            
-                                            <h2 className="portfolio_project__title">
-                                            The Vvital
-                                            </h2>
-                                            <p className="portfolio_project__description project--pbottom">
-                                                This project is a landing page about a new product. My role was to fully develop and animate the Vvital's landing page.
-                                            </p>
-                                        </a> 
-                                        
-                                        <a href="http://padsquad.com/vvital/" target="_blank" className="btn btn--border btn--round"> View live</a>
-
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-
+                             
                             <div className="col-xs-12 col-sm-5 box--height">
 
                                 <div className="box">
@@ -179,6 +119,66 @@ class ProjectPadsquad extends React.Component {
                                         </a> 
                                         
                                         <a href="http://crabfesttest.surge.sh/" target="_blank" className="btn btn--border btn--round"> View live</a>
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div className="col-xs-12 col-sm-5 box--height">
+
+                                <div className="box">
+
+                                    <div  className="project__container">
+                                        <a href="http://padsquad.celtra.com/preview/1ab1d4f5" target="_blank">
+                                            <div className="project__circle"></div>
+
+                                            <div className="project__img padsquad"></div>
+
+                                            <div className="portfolio_project__tech">
+                                            Javacript, Celtra, CSS
+                                            </div>
+                                            
+                                            <h2 className="portfolio_project__title">
+                                               DSW Catch Shoe Game
+                                            </h2>
+                                            <p className="portfolio_project__description project--pbottom">
+                                                This is a banner game in which you have to catch all the shoes that you can to be able to see the offer of the product that you catched.
+                                            </p>
+                                        </a> 
+                                        
+                                        <a href="http://padsquad.celtra.com/preview/1ab1d4f5" target="_blank" className="btn btn--border btn--round"> View live</a>
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div className="col-xs-12 col-sm-5 box--height">
+
+                                <div className="box">
+
+                                    <div  className="project__container">
+                                        <a href="http://padsquad.celtra.com/preview/53c8ac29" target="_blank">
+                                            <div className="project__circle"></div>
+
+                                            <div className="project__img padsquad"></div>
+
+                                            <div className="portfolio_project__tech">
+                                                Javacript, Celtra, Css
+                                            </div>
+                                            
+                                            <h2 className="portfolio_project__title">
+                                            Peter The Rabbit Match Game
+                                            </h2>
+                                            <p className="portfolio_project__description project--pbottom">
+                                                This is a banner game in which you have to match two of the characters to be able to reveal the video promotion of them.
+                                            </p>
+                                        </a> 
+                                        
+                                        <a href="http://padsquad.celtra.com/preview/53c8ac29" target="_blank" className="btn btn--border btn--round"> View live</a>
 
                                     </div>
                                     
