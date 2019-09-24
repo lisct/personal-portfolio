@@ -28,13 +28,6 @@ body {
   cursor: url("/images/pointer/mouse_pointer@1x.png") 1 1, auto !important;
   cursor: -webkit-image-set(url("/images/pointer/mouse_pointer@1x.png") 1x, url("/images/pointer/mouse_pointer@2x.png") 2x) 0 0,pointer !important;
 
-  a:hover, button:hover, .btn:hover, .explore:hover{
-
-    cursor: url("/images/mouse_pointer@1x.png") 1 1, auto !important;
-    cursor: -webkit-image-set(url("/images/pointer/mouse_pointer_hover@1x.png") 1x, url("/images/pointer/mouse_pointer_hover@2x.png") 2x) 0 0,pointer !important;
-
-  }
-
 }
 
 a{

@@ -43,7 +43,7 @@
     
     &__image img{
 
-        opacity: .5;
+        opacity: .6;
         transition: all .3s ease-in-out;
         width: 100%;
 
@@ -57,7 +57,7 @@
 
         &__image img{
 
-            opacity: .2;
+            scale: 1;
 
         }
 
@@ -65,7 +65,7 @@
 
             .portfolio_project__image img{
                 
-                opacity: .5;
+                scale: 1.02;
     
             }
     
@@ -104,7 +104,7 @@
 
     &__circle{
 
-        background-color: $blue;
+        background-color: $blue-light;
         border: 3px solid #fff;
         border-radius: 15px;
         height: 20px;
