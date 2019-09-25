@@ -126,14 +126,17 @@ input, select, textarea{
   border: 1px solid $gray_dark;
   box-sizing: border-box;
   color: $darker;
-  margin: 1rem 0;
+  margin: 0.6rem 0;
   padding: 1rem;
   width: 100%;
+  font-size: 0.9em;
+  border-radius: 4px;
 
   @include placeholder {
 
     color: darken($gray_dark, 30%);
     font-family: $font-main;
+    font-size: 0.9em;
   
   }
 
@@ -155,6 +158,8 @@ input, select, textarea, .btn, a{
   transition: all .3s ease-in-out;
 
 }
+
+label{ color: $dark_light }
 
 // Button
 //–––––––––––––––––––––––––––––––––––––––––––––––––

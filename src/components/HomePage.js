@@ -151,7 +151,6 @@ class HomePage extends React.Component{
     render(){
         
         return(
-           
             <Fragment>
 
                 {/* //  Chek if you are in the login route, then show the loggin btn*/}
@@ -164,7 +163,7 @@ class HomePage extends React.Component{
                         logout={ this.logout }
                     />
                 }
-
+                
                 <Hero />
 
                 <Portfolio 

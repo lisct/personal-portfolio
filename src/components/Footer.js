@@ -14,14 +14,14 @@ class Footer extends React.Component{
         
         return(
 
-            <footer className="bar bar--blue footer">
+            <footer className="bar bar--blue footer" id="footer">
                 <div className="wrap container-fluid">    
                     <div className="row middle-xs">
 
                         <div className="col-xs-12 col-sm-3">
                             <div className="box footer__item">
                                 <h4 className="footer__item__tittle">Say Hello</h4>
-                                <p className="footer__item__info"><a href="mailto:lcruztaveras@gmail.com">lcruztaveras@gmail.com</a></p>
+                                <p className="footer__item__info"><a href="#modal">lcruztaveras@gmail.com</a></p>
                                 <p className="footer__item__info">+1 (786) 537 - 0166</p>
                             </div>
 
@@ -34,7 +34,7 @@ class Footer extends React.Component{
                     
                         <div className="col-xs-12 col-sm-6">
                             <div className="box box--center footer__item footer__item--msj">
-                                <h1 className="footer__item__header">Let’s Work Together</h1>
+                                <a href="#modal"><h1 className="footer__item__header">Let’s Work Together</h1></a>
                             </div>
                         </div>
 

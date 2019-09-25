@@ -1,0 +1,46 @@
+.contact{
+
+    &__header{
+
+        text-align: center;
+
+        h3{
+            padding: 0;
+            margin: 0;
+        }
+
+        h1{
+
+            font-size: 1.8em;
+            margin-top: -7px;
+            color: $blue_dark;
+            line-height: 1.2em;
+
+        }
+
+    }
+
+    &__form{
+
+        &--inputs{
+            
+            text-align: left;
+
+            label{
+                
+                font-size: 0.9em;
+                letter-spacing: 0.03em;
+                
+            }
+
+            .btn{
+
+                text-align: center;
+
+            }
+            
+        }
+
+    }
+
+}

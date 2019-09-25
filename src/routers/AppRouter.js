@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
 import ProjectChallenge from '../components/ProjectChallenge';
@@ -53,6 +54,8 @@ class AppRouter extends React.Component{
                         <Route path="/project/logos" component={ tracker(ProjectLogos) } exact={true}/>
                         <Route component={tracker(NotFoundPage)} />
                     </Switch>
+
+                    <ContactForm />
 
                     <Footer />
                     

@@ -1,0 +1,103 @@
+#modal {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+
+
+    width: 100%;
+    padding: 1em;
+
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+
+  }
+  
+  #modal:target {
+
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  #modal .header, #modal .footer {
+      
+    border-radius: 5px 5px 0 0;
+
+  }
+  
+  #modal .btn { float: right }
+  
+  .modal-content {
+
+    background:white;
+    position: relative;
+    z-index: 20;
+    padding: 2em;
+    border-radius: 6px;
+
+    @media (min-width: 424px) {
+
+        padding: 3em;
+
+    }
+    
+  }
+  
+  #modal .overlay {
+
+    background-color: #000;
+    background: rgba(0,0,0,.8);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+  }
+  
+  .close-button {
+    height: 28px;
+    width: 28px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 50px;
+    display: inline-block;
+    background: $blue_dark;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border-radius: 50px;
+  }
+  .close-button:before,
+  .close-button:after {
+    transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    height: 2px;
+    width: 14px;
+    background-color: #fff;
+    transition: all 0.2s ease-out;
+  }
+  .close-button:after {
+    transform: rotate(45deg);
+  }
+  .close-button:hover:before,
+  .close-button:hover:after {
+    transform: rotate(0deg);
+  }
