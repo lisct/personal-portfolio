@@ -161,8 +161,17 @@ input, select, textarea, .btn, a{
 
 label{ color: $dark_light }
 
+input.required,
+textarea.required { border-color: $warning }
+
 // Button
 //–––––––––––––––––––––––––––––––––––––––––––––––––
+
+button:disabled,
+button[disabled]{
+  background-color: $dark;
+  cursor: not-allowed;
+}
 
 .btn{
 

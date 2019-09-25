@@ -33,9 +33,11 @@ class Footer extends React.Component{
                         </div>
                     
                         <div className="col-xs-12 col-sm-6">
-                            <div className="box box--center footer__item footer__item--msj">
-                                <a href="#modal"><h1 className="footer__item__header">Let’s Work Together</h1></a>
-                            </div>
+                            <a href="#modal">
+                                <div className="box box--center footer__item footer__item--msj">
+                                    <h1 className="footer__item__header">Let’s Work Together</h1>
+                                </div>
+                            </a>
                         </div>
 
                         <div className="col-xs-12 col-sm-3">
