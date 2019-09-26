@@ -12,7 +12,7 @@
         h1{
 
             font-size: 1.8em;
-            margin-top: -7px;
+            margin-top: -3px;
             color: $blue_dark;
             line-height: 1.2em;
 
@@ -20,6 +20,7 @@
              @media (min-width: 768px) {
 
                 font-size: 2.4em;
+                margin-top: -7px;
 
             } 
 
@@ -65,4 +66,178 @@
 
     }
 
+    &__success{
+
+        margin-top: 3em;
+
+        p{
+
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 1.4em;
+
+        }
+
+        &__icon{
+            
+            &--container{
+
+                text-align: center;
+        
+            }
+
+            display: inline-block;
+            width: 8em;
+            height: 8em;
+            font-size: 8px;
+            border-radius: 50%;
+            border: 4px solid #6bb365;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            -webkit-transform-origin: center;
+            transform-origin: center;
+            -webkit-animation: showSuccess 180ms ease-in-out;
+            animation: showSuccess 180ms ease-in-out;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+
+            &--tip, &--long {
+
+                display: block;
+                position: absolute;
+                height: 4px;
+                background-color: #6bb365;
+                border-radius: 10px;
+            }
+
+            &--tip {
+
+                width: 2.4em;
+                top: 4.3em;
+                left: 1.4em;
+                -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                -webkit-animation: tipInPlace 300ms ease-in-out;
+                        animation: tipInPlace 300ms ease-in-out;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
+                -webkit-animation-delay: 180ms;
+                        animation-delay: 180ms;
+                visibility: hidden;
+
+            }
+
+            &--long {
+
+                width: 4em;
+                -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                top: 3.7em;
+                left: 2.75em;
+                -webkit-animation: longInPlace 140ms ease-in-out;
+                        animation: longInPlace 140ms ease-in-out;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
+                visibility: hidden;
+                -webkit-animation-delay: 440ms;
+                        animation-delay: 440ms;
+
+            }
+            
+            @-webkit-keyframes showSuccess {
+
+                from {
+                    -webkit-transform: scale(0);
+                            transform: scale(0);
+                }
+                to {
+                    -webkit-transform: scale(1);
+                            transform: scale(1);
+                }
+
+            }
+            
+            @keyframes showSuccess {
+
+                from {
+                    -webkit-transform: scale(0);
+                            transform: scale(0);
+                }
+                to {
+                    -webkit-transform: scale(1);
+                            transform: scale(1);
+                }
+
+            }
+            @-webkit-keyframes tipInPlace {
+
+                from {
+                    width: 0em;
+                    top: 0em;
+                    left: -1.6em;
+                }
+                to {
+                    width: 2.4em;
+                    top: 4.3em;
+                    left: 1.4em;
+                    visibility: visible;
+                }
+
+            }
+
+            @keyframes tipInPlace {
+
+                from {
+                    width: 0em;
+                    top: 0em;
+                    left: -1.6em;
+                }
+                to {
+                    width: 2.4em;
+                    top: 4.3em;
+                    left: 1.4em;
+                    visibility: visible;
+                }
+
+            }
+            
+            @-webkit-keyframes longInPlace {
+
+                from {
+                    width: 0em;
+                    top: 5.1em;
+                    left: 3.2em;
+                }
+                to {
+                    width: 4em;
+                    top: 3.7em;
+                    left: 2.75em;
+                    visibility: visible;
+                }
+
+            }
+            @keyframes longInPlace {
+
+                from {
+                    width: 0em;
+                    top: 5.1em;
+                    left: 3.2em;
+                }
+                to {
+                    width: 4em;
+                    top: 3.7em;
+                    left: 2.75em;
+                    visibility: visible;
+                }
+                
+            }
+        }
+       
+    }
+
 }
+
+
+  
