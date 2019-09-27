@@ -20,7 +20,7 @@ const UserFormHandle = (initial_state, validate) => {
         // making the POST: Contact form
         axios({
             method: "POST", 
-            url:"http://localhost:3002/send", 
+            url:"/send", 
             data: {
                 name: values.name,   
                 email: values.email,  
