@@ -2,6 +2,7 @@
 
 https://www.lisbelcruz.com
 
+
 ## Repository
 
 1. Install dependencies
@@ -22,16 +23,23 @@ yarn run build:dev or npm run build:dev
 yarn run dev-server or npm run dev-server
 ```
 
-alternative to 3 Run Server (Development Live changes)
-
-```bash
-yarn run server or npm run server
-```
-
 Running local
 
 ```bash
 http://localhost:8080
+```
+
+
+## Backend (express, nodemailer for the contact form)
+
+Run Backend(functions) and Frontend (public)
+
+```bash
+sudo firebase serve --only functions,hosting
+```
+
+```bash
+http://localhost:5000
 ```
 
 ## Production

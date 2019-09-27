@@ -21,6 +21,11 @@ transporter.verify((error, success) => {
   }
 });
 
+// router.get('/send-cached', (req, res) => {
+//    res.set('Cache-control', 'public', 'max-age=300, s-maxage=600');
+//    res.send('index')
+// })
+
 router.post('/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
