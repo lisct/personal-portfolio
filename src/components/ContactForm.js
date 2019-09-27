@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from './base/Modal';
-import ReactGA from 'react-ga';
 
 import UserFormHandle from "./UserFormHandle";
 import UserDataValidation from "./UserDataValidation";
@@ -22,16 +21,6 @@ const ContactForm = () => {
         errors,
         apiError,
     } = UserFormHandle(INITIAL_STATE, UserDataValidation);
-
-    const sendMessageTracker = () => {
-
-        //Tracker
-        ReactGA.event({
-            category: 'contact-form',
-            action: 'sendMessage',
-        });
-    
-    }
 
     return(
         !values.closeModal && <Modal
@@ -123,7 +112,6 @@ const ContactForm = () => {
                                                 className="btn btn--round btn--small"
                                                 form="contact-form"
                                                 disabled={!values.message && !values.message && !values.message}
-                                                onClick={sendMessageTracker}
                                             >
                                                 <span> Send Message</span>
                                                 <span className="btn__icon"></span>

@@ -1,7 +1,6 @@
 import React from 'react';
 import TweenLite from 'gsap';
 import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
-import ReactGA from 'react-ga';
 
 class Footer extends React.Component{
 
@@ -9,26 +8,6 @@ class Footer extends React.Component{
 
         TweenLite.to(window, .5, { scrollTo: window.innerHeight - window.innerHeight } );
 
-    }
-
-    letsTracker = () => {
-
-        //Tracker
-        ReactGA.event({
-            category: 'contact-form',
-            action: 'lets work together',
-        });
-    
-    }
-
-    EmailTracker = () => {
-
-        //Tracker
-        ReactGA.event({
-            category: 'contact-form',
-            action: 'email',
-        });
-    
     }
 
     render(){
@@ -45,7 +24,6 @@ class Footer extends React.Component{
                                 <p className="footer__item__info">
                                     <a 
                                         href="#modal"
-                                        onClick={this.EmailTracker}
                                     >
                                         lcruztaveras@gmail.com
                                     </a>
@@ -63,7 +41,6 @@ class Footer extends React.Component{
                         <div className="col-xs-12 col-sm-6">
                             <a 
                                 href="#modal"
-                                onClick={this.letsTracker}
                             >
                                 <div className="box box--center footer__item footer__item--msj">
                                     <h1 className="footer__item__header">Let’s Work Together</h1>
