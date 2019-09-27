@@ -1,6 +1,7 @@
 import React from 'react';
 import TweenLite from 'gsap';
 import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
+import ReactGA from 'react-ga';
 
 class Footer extends React.Component{
 
@@ -8,6 +9,26 @@ class Footer extends React.Component{
 
         TweenLite.to(window, .5, { scrollTo: window.innerHeight - window.innerHeight } );
 
+    }
+
+    letsTracker = () => {
+
+        //Tracker
+        ReactGA.event({
+            category: 'contact-form',
+            action: 'lets work together',
+        });
+    
+    }
+
+    EmailTracker = () => {
+
+        //Tracker
+        ReactGA.event({
+            category: 'contact-form',
+            action: 'email',
+        });
+    
     }
 
     render(){
@@ -21,7 +42,14 @@ class Footer extends React.Component{
                         <div className="col-xs-12 col-sm-3">
                             <div className="box footer__item">
                                 <h4 className="footer__item__tittle">Say Hello</h4>
-                                <p className="footer__item__info"><a href="#modal">lcruztaveras@gmail.com</a></p>
+                                <p className="footer__item__info">
+                                    <a 
+                                        href="#modal"
+                                        onClick={this.EmailTracker}
+                                    >
+                                        lcruztaveras@gmail.com
+                                    </a>
+                                </p>
                                 <p className="footer__item__info">+1 (786) 537 - 0166</p>
                             </div>
 
@@ -33,7 +61,10 @@ class Footer extends React.Component{
                         </div>
                     
                         <div className="col-xs-12 col-sm-6">
-                            <a href="#modal">
+                            <a 
+                                href="#modal"
+                                onClick={this.letsTracker}
+                            >
                                 <div className="box box--center footer__item footer__item--msj">
                                     <h1 className="footer__item__header">Let’s Work Together</h1>
                                 </div>
@@ -53,7 +84,10 @@ class Footer extends React.Component{
                         </div>
 
                     
-                        <div className="footer_explore explore" onClick={this.handleScrollToTop}>
+                        <div 
+                            className="footer_explore explore" 
+                            onClick={this.handleScrollToTop}
+                        >
                             <h5 className="footer_explore--text">To the Top</h5>
                             <span className="footer_explore--line"></span>
                             <span className="footer_explore--fill"></span>
