@@ -58,7 +58,7 @@ if ($_POST) {
 
     }
     
-    //echo json_encode($array); 
+    echo json_encode($array); 
     
 }
 

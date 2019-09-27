@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import UserPostData from './UserPostData';
+import axios from 'axios';
 
 const UserFormHandle = (initial_state, validate) => {
 
@@ -17,12 +17,32 @@ const UserFormHandle = (initial_state, validate) => {
 
       if (noErrors) {
 
-        UserPostData(values)
-          .then( setTimeout(function(){ setValues({ ...values, apiSend: true }) }, 500))
-          .then( setTimeout(function(){ setValues({ ...values, closeModal: true }) }, 2600))
-          .then( setTimeout(function(){ hanldleReset() }, 3000) )
-          .catch(error => setApiErrors(error));
+        // making the POST: Contact form
+        axios({
+            method: "POST", 
+            url:"http://localhost:3002/send", 
+            data: {
+                name: values.name,   
+                email: values.email,  
+                message: values.message
+            }
+        })
+        .then((response)=>{
 
+            if (response.data.msg === 'success'){
+
+                setTimeout(function(){ setValues({ ...values, apiSend: true }) } )
+                setTimeout(function(){ setValues({ ...values, closeModal: true }) }, 2600)
+                setTimeout(function(){ hanldleReset() }, 3000)
+                
+            }else if(response.data.msg === 'fail'){
+
+                console.log("Message failed to send.")
+
+            }
+
+        });
+        
         setSubmitting(false);
 
       } else {
