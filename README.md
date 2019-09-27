@@ -2,6 +2,7 @@
 
 https://www.lisbelcruz.com
 
+This is my personal portfolio where you can find a collection of my work. This website has a fully working contact form and a login side. I focused in micro interactions which are more notorious in desktop version.
 
 ## Repository
 
@@ -65,7 +66,7 @@ Google Analytics general tag and custom tracker has been added.
 ```
 
 
-## Packages
+## Packages Frontend
 
 * "babel-cli": "6.24.1",
 * "babel-core": "^6.26.0",
@@ -98,3 +99,16 @@ Google Analytics general tag and custom tracker has been added.
 * "webpack": "3.1.0",
 * "webpack-dev-server": "2.5.1"
 
+## Packages Backend
+
+* "body-parser": "^1.19.0",
+* "cookie-parser": "^1.4.4",
+* "debug": "^4.1.1",
+* "express": "^4.17.1",
+* "firebase-admin": "^8.0.0",
+* "firebase-functions": "^3.0.0",
+* "fs": "^0.0.1-security",
+* "morgan": "^1.9.1",
+* "nodemailer": "^6.3.0",
+* "pug": "^2.0.4",
+* "serve-favicon": "^2.5.0"
