@@ -1,20 +1,20 @@
 // Base files
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// NOTE: 
+// NOTE:
 // The responsive style is mobile first
 
-@import "base/settings";
-@import "base/font";
-@import "base/base";
-@import "base/modal";
-@import "components/login";
-@import "components/header";
-@import "components/hero";
-@import "components/portfolio";
-@import "components/needResume";
-@import "components/footer";
-@import "components/preloader";
-@import "components/project";
-@import "components/notFound";
-@import "components/contactForm";
+@use "./variables" as *;
+@use "base/font";
+@use "base/base";
+@use "base/modal";
+@use "components/login";
+@use "components/header";
+@use "components/hero";
+@use "components/portfolio";
+@use "components/needResume";
+@use "components/footer";
+@use "components/preloader";
+@use "components/project";
+@use "components/notFound";
+@use "components/contactForm";

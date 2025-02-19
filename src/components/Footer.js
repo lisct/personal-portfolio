@@ -1,82 +1,93 @@
-import React from 'react';
-import TweenLite from 'gsap';
-import scrollTo from '../../node_modules/gsap/ScrollToPlugin';
+import React from "react";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-class Footer extends React.Component{
+gsap.registerPlugin(ScrollToPlugin);
 
-    handleScrollToTop = () => {
+class Footer extends React.Component {
+  handleScrollToTop = () => {
+    gsap.to(window, { duration: 0.5, scrollTo: { y: 0 } });
+  };
 
-        TweenLite.to(window, .5, { scrollTo: window.innerHeight - window.innerHeight } );
+  render() {
+    return (
+      <footer className="bar bar--blue footer" id="footer">
+        <div className="wrap container-fluid">
+          <div className="row middle-xs">
+            <div className="col-xs-12 col-sm-3">
+              <div className="box footer__item">
+                <h4 className="footer__item__tittle">Say Hello</h4>
+                <p className="footer__item__info">
+                  <a href="#modal">lcruztaveras@gmail.com</a>
+                </p>
+                <p className="footer__item__info">+1 (786) 537 - 0166</p>
+              </div>
 
-    }
+              <div className="box footer__item">
+                <h4 className="footer__item__tittle">Location</h4>
+                <p className="footer__item__info">
+                  United States <br /> Houston, Tx.
+                </p>
+              </div>
+            </div>
 
-    render(){
-        
-        return(
-
-            <footer className="bar bar--blue footer" id="footer">
-                <div className="wrap container-fluid">    
-                    <div className="row middle-xs">
-
-                        <div className="col-xs-12 col-sm-3">
-                            <div className="box footer__item">
-                                <h4 className="footer__item__tittle">Say Hello</h4>
-                                <p className="footer__item__info">
-                                    <a 
-                                        href="#modal"
-                                    >
-                                        lcruztaveras@gmail.com
-                                    </a>
-                                </p>
-                                <p className="footer__item__info">+1 (786) 537 - 0166</p>
-                            </div>
-
-                            <div className="box footer__item">
-                                <h4 className="footer__item__tittle">Location</h4>
-                                <p className="footer__item__info">United States <br/> Houston, Tx.</p>
-                            </div>
-
-                        </div>
-                    
-                        <div className="col-xs-12 col-sm-6">
-                            <a 
-                                href="#modal"
-                            >
-                                <div className="box box--center footer__item footer__item--msj">
-                                    <h1 className="footer__item__header">Let’s Work Together</h1>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="col-xs-12 col-sm-3">
-                            <div className="box footer__item footer__item--left footer__item--social">
-                                <h4 className="footer__item__tittle">Follow Me</h4>
-                                <p className="footer__item__info"><a href="https://www.behance.net/LisCT" target="_black">Behance</a></p>
-                                <p className="footer__item__info"><a href="https://dribbble.com/LisCT" target="_black">Dribble</a></p>
-                                <p className="footer__item__info"><a href="https://github.com/LisCT" target="_black">Github</a></p>
-                                <p className="footer__item__info"><a href="https://www.instagram.com/lisccode/" target="_black">Instagram</a></p>
-                                <p className="footer__item__info"><a href="https://twitter.com/lisct" target="_black">Twitter</a></p>
-                                <p className="footer__item__info"><a href="https://www.linkedin.com/in/lisct/" target="_black">Linkedin</a></p>
-                            </div>
-                        </div>
-
-                    
-                        <div 
-                            className="footer_explore explore" 
-                            onClick={this.handleScrollToTop}
-                        >
-                            <h5 className="footer_explore--text">To the Top</h5>
-                            <span className="footer_explore--line"></span>
-                            <span className="footer_explore--fill"></span>
-                        </div>
-                    
-                    </div>
+            <div className="col-xs-12 col-sm-6">
+              <a href="#modal">
+                <div className="box box--center footer__item footer__item--msj">
+                  <h1 className="footer__item__header">Let’s Work Together</h1>
                 </div>
-            </footer>
-        )
+              </a>
+            </div>
 
-    }
+            <div className="col-xs-12 col-sm-3">
+              <div className="box footer__item footer__item--left footer__item--social">
+                <h4 className="footer__item__tittle">Follow Me</h4>
+                <p className="footer__item__info">
+                  <a href="https://www.behance.net/LisCT" target="_black">
+                    Behance
+                  </a>
+                </p>
+                <p className="footer__item__info">
+                  <a href="https://dribbble.com/LisCT" target="_black">
+                    Dribble
+                  </a>
+                </p>
+                <p className="footer__item__info">
+                  <a href="https://github.com/LisCT" target="_black">
+                    Github
+                  </a>
+                </p>
+                <p className="footer__item__info">
+                  <a href="https://www.instagram.com/lisccode/" target="_black">
+                    Instagram
+                  </a>
+                </p>
+                <p className="footer__item__info">
+                  <a href="https://twitter.com/lisct" target="_black">
+                    Twitter
+                  </a>
+                </p>
+                <p className="footer__item__info">
+                  <a href="https://www.linkedin.com/in/lisct/" target="_black">
+                    Linkedin
+                  </a>
+                </p>
+              </div>
+            </div>
 
+            <div
+              className="footer_explore explore"
+              onClick={this.handleScrollToTop}
+            >
+              <h5 className="footer_explore--text">To the Top</h5>
+              <span className="footer_explore--line"></span>
+              <span className="footer_explore--fill"></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
 }
 
-export default Footer
+export default Footer;

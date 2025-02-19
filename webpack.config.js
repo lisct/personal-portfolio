@@ -1,58 +1,59 @@
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
-  const isProduction = env === 'production';
-  const CSSExtract = new ExtractTextPlugin('css/styles.css');
+  const isProduction = env === "production";
 
-  return{
-    entry: ['babel-polyfill', './src/app.js'],
+  return {
+    mode: isProduction ? "production" : "development",
+    entry: ["babel-polyfill", "./src/app.js"],
     output: {
-      path: path.join(__dirname, 'public'),
-      filename: 'js/bundle.js',
+      path: path.resolve(__dirname, "public"),
+      filename: "js/bundle.js",
     },
     module: {
       rules: [
         {
-          loader: 'babel-loader',
           test: /\.js$/,
           exclude: /node_modules/,
+          use: "babel-loader",
         },
         {
           test: /\.s?css$/,
-          use: CSSExtract.extract({
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: true
-                }
-              },
-              {
-                loader: 'sass-loader',
-                options: {
-                  sourceMap: true
-                }
-              }
-            ]
-          }),
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: "css-loader",
+              options: { sourceMap: !isProduction },
+            },
+            {
+              loader: "sass-loader",
+              options: { sourceMap: !isProduction },
+            },
+          ],
         },
-        { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-          use: "url-loader?limit=10000&mimetype=application/font-woff&name=&name=/css/webfonts/[name].[ext]"  
+        {
+          test: /\.(woff|woff2|ttf|eot|svg)$/,
+          type: "asset/resource",
+          generator: {
+            filename: "css/webfonts/[name][ext]",
+          },
         },
-        { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-          use: "file-loader?limit=10000&mimetype=application/font-woff&name=&name=/css/webfonts/[name].[ext]" 
-        }
       ],
     },
-    plugins: [
-      CSSExtract
-    ],
-    devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+    plugins: [new MiniCssExtractPlugin({ filename: "css/styles.css" })],
+    devtool: isProduction ? "source-map" : "eval-source-map",
     devServer: {
-      contentBase: path.join(__dirname, 'public'),
+      static: {
+        directory: path.join(__dirname, "public"),
+      },
       historyApiFallback: true,
+      hot: true, // Enables HMR (Hot Module Replacement)
+      open: true, // Opens browser automatically
+      port: 8080, // Ensures it runs on a standard port
     },
-  }
-}
-
+    resolve: {
+      extensions: [".js", ".jsx", ".json"], // Ensures Webpack resolves imports properly
+    },
+  };
+};

@@ -1,70 +1,49 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Fragment } from 'react';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import ContactForm from '../components/ContactForm';
-import HomePage from '../components/HomePage';
-import NotFoundPage from '../components/NotFoundPage';
-import ProjectChallenge from '../components/ProjectChallenge';
-import ProjectPadsquad from '../components/ProjectPadsquad';
-import ProjectLogos from '../components/ProjectLogos';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
+import HomePage from "../components/HomePage";
+import NotFoundPage from "../components/NotFoundPage";
+import ProjectChallenge from "../components/ProjectChallenge";
+import ProjectPadsquad from "../components/ProjectPadsquad";
+import ProjectLogos from "../components/ProjectLogos";
 
-//Tracker
-import tracker from '../helpers/tracker';
+const AppRouter = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
-class AppRouter extends React.Component{
+  useEffect(() => {
+    // Waiting for loader to animate. Loading complete when var is set to false.
+    setTimeout(() => setIsLoading(false), 2200);
+  }, []);
 
-    state = {
+  return (
+    <Router>
+      <>
+        {isLoading ? (
+          <></>
+        ) : (
+          <>
+            <Header />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/:login" element={<HomePage />} />
+              <Route
+                path="/project/challenges"
+                element={<ProjectChallenge />}
+              />
+              <Route path="/project/padsquad" element={<ProjectPadsquad />} />
+              <Route path="/project/logos" element={<ProjectLogos />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+            <ContactForm />
+            <Footer />
+          </>
+        )}
+      </>
+    </Router>
+  );
+};
 
-        isLoading: true
-
-    }
-
-    componentDidMount() {
-
-        // waiting for loader to animate. Loading complete when var is set to false. 
-        setTimeout(() => this.setState({ isLoading: false }), 2200); 
-
-    }
-      
-    render(){
-
-        // Loader
-        const { isLoading } = this.state;
-
-        if(isLoading) {
-
-            return null;
-            
-        }
-
-        return (
-            <BrowserRouter >
-                <Fragment>
-
-                    <Header />
-                    
-                    <Switch>
-                        <Route path="/" component={ tracker(HomePage) } exact={true}/>
-                        <Route path="/:login" component={ tracker(HomePage) } exact={true}/>
-                        <Route path="/project/challenges" component={ tracker(ProjectChallenge) } exact={true}/>
-                        <Route path="/project/padsquad" component={ tracker(ProjectPadsquad) } exact={true}/>
-                        <Route path="/project/logos" component={ tracker(ProjectLogos) } exact={true}/>
-                        <Route component={tracker(NotFoundPage)} />
-                    </Switch>
-
-                    <ContactForm />
-
-                    <Footer />
-                    
-                </Fragment>
-            </BrowserRouter>
-        )
-
-    }
-}
-
-
-export default AppRouter
+export default AppRouter;

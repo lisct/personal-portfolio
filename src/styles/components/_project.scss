@@ -1,5 +1,7 @@
+@use '../variables' as variables;
+
 .project{
-    
+
     &--pbottom{
 
         margin-bottom: 5rem;
@@ -43,19 +45,19 @@
         box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
         width: 100%;
-        
+
         // mobile first
         @media (min-width: 769px) {
 
             margin-bottom: 6rem;
-                
+
         }
-        
+
     }
 
     &__container{
 
-        border: 2px solid $blue;
+        border: 2px solid variables.$blue;
         box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.28);
         margin-bottom: 8rem;
         overflow: hidden;
@@ -64,10 +66,10 @@
         border-radius: 5px;
         transition: all .3s ease-in-out;
         height: 100%;
-        
-        &:hover { 
-            
-            border: 2px solid $blue;
+
+        &:hover {
+
+            border: 2px solid variables.$blue;
 
         }
 
@@ -78,12 +80,12 @@
 
             &:hover{
 
-                border: 2px solid $blue;
-    
+                border: 2px solid variables.$blue;
+
             }
-                
+
         }
-        
+
     }
 
     &__img{
@@ -115,13 +117,13 @@
     .padsquad{
 
         background-image: url("/images/padsquad@2x.jpg");
-        
+
     }
 
     &__circle{
 
 
-        background-color: $blue-light;
+        background-color: variables.$blue-light;
         border: 3px solid #fff;
         border-radius: 15px;
         height: 28px;
@@ -138,7 +140,7 @@
 
         left: 9%;
         text-align: left;
-    
+
     }
 
 }

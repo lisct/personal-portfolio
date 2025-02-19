@@ -1,3 +1,7 @@
+@use '../base/font' as font;
+@use '../variables' as *;
+@use "sass:color";
+
 // Base Styles
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -10,18 +14,17 @@ html {
   font-size: 62.5%;
   height: 100%;
   color: $darker;
-  font-family: $font-main;
+  font-family: font.$font-main;
   letter-spacing: 0.04rem;
   max-width: 100%;
   overflow-x: hidden;
-  
 }
 
 body {
 
   font-size: 1.5rem; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
-  font-weight: 400; 
+  font-weight: 400;
   overflow-x: hidden;
 
   // mouse cursor
@@ -75,13 +78,13 @@ h1{
 
   text-align: center;
   color: $blue-dark;
-  
+
 }
 
 .header_main{
 
   padding: 8rem 0;
-  
+
 }
 
 .header_section{
@@ -100,7 +103,7 @@ textarea{
 }
 
 select{
-  
+
   background-image:
   linear-gradient(45deg, transparent 50%, gray 50%),
   linear-gradient(135deg, gray 50%, transparent 50%),
@@ -134,10 +137,10 @@ input, select, textarea{
 
   @include placeholder {
 
-    color: darken($gray_dark, 30%);
-    font-family: $font-main;
+    color: color.mix(black, $gray_dark, 30%);
+    font-family: font.$font-main;
     font-size: 0.9em;
-  
+
   }
 
   &:hover, &:focus{
@@ -179,7 +182,7 @@ button[disabled]{
   border: 0;
   color: white;
   cursor: pointer;
-  font-family: $font-main;
+  font-family: font.$font-main;
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
   padding: 1rem 0;
@@ -187,17 +190,17 @@ button[disabled]{
   width: 100%;
 
   a{
-    
+
     color:  white;
 
   }
-  
+
   &:hover{
 
-    background-color: darken($blue-dark, 5%);
+    background-color: color.mix(black,$blue-dark, 5%);
 
   }
-  
+
   &__icon{
 
     &:before{
@@ -262,7 +265,7 @@ button[disabled]{
     }
 
   }
-  
+
 }
 
 
@@ -278,14 +281,14 @@ hr {
   opacity: .5;
 
   &:after{
-    
+
     content: '';
     background-color: $darker;
     display: block;
     height: 1px;
     position: absolute;
     width: 100%;
-    
+
   }
 
 }
@@ -293,7 +296,7 @@ hr {
 div, header, section, footer {
 
   box-sizing: border-box;
-  
+
 }
 
 
@@ -332,7 +335,7 @@ div, header, section, footer {
 .box{
 
   &--left{
-    
+
     text-align: left;
 
   }
@@ -346,7 +349,7 @@ div, header, section, footer {
   &--center{
 
     text-align: center;
-    
+
   }
 
 }

@@ -1,3 +1,5 @@
+@use '../variables' as * ;
+
 .contact{
 
     &__header{
@@ -22,7 +24,7 @@
                 font-size: 2.4em;
                 margin-top: -7px;
 
-            } 
+            }
 
         }
 
@@ -31,14 +33,14 @@
     &__form{
 
         &--inputs{
-            
+
             text-align: left;
 
             label{
-                
+
                 font-size: 0.9em;
                 letter-spacing: 0.03em;
-                
+
             }
 
             .errors p {
@@ -61,7 +63,7 @@
                 margin-bottom: 1em;
 
             }
-            
+
         }
 
     }
@@ -80,13 +82,6 @@
         }
 
         &__icon{
-            
-            &--container{
-
-                text-align: center;
-        
-            }
-
             display: inline-block;
             width: 8em;
             height: 8em;
@@ -102,6 +97,13 @@
             animation: showSuccess 180ms ease-in-out;
             -webkit-transform: scale(1);
             transform: scale(1);
+
+
+            &--container{
+
+                text-align: center;
+
+            }
 
             &--tip, &--long {
 
@@ -145,7 +147,7 @@
                         animation-delay: 440ms;
 
             }
-            
+
             @-webkit-keyframes showSuccess {
 
                 from {
@@ -158,7 +160,7 @@
                 }
 
             }
-            
+
             @keyframes showSuccess {
 
                 from {
@@ -202,7 +204,7 @@
                 }
 
             }
-            
+
             @-webkit-keyframes longInPlace {
 
                 from {
@@ -231,13 +233,12 @@
                     left: 2.75em;
                     visibility: visible;
                 }
-                
+
             }
         }
-       
+
     }
 
 }
 
 
-  

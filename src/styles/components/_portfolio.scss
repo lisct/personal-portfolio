@@ -1,8 +1,10 @@
+@use '../variables' as variables;
+
 // Portfolio
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .portfolio_project{
-    
+
     &__wrapper{
 
         position: relative;
@@ -12,23 +14,23 @@
         @media (min-width: 375px) {
 
             margin-bottom:  35rem;
-                
+
         }
 
         @media (min-width: 425px) {
 
             margin-bottom:  30rem;
-        
+
         }
-    
+
         @media (min-width: 580px) {
-    
+
             margin-bottom: 20rem;
-        
+
         }
 
         @media (min-width: 600px) {
-    
+
             margin-bottom: 7rem;
 
         }
@@ -36,11 +38,11 @@
         .col-xs-12, .col-xs-11, .col-sm-8, .col-md-6{
 
             padding: 0;
-    
+
         }
-        
+
     }
-    
+
     &__image img{
 
         opacity: .6;
@@ -64,19 +66,19 @@
         &:hover{
 
             .portfolio_project__image img{
-                
+
                 scale: 1.02;
-    
+
             }
-    
-        }    
-                    
+
+        }
+
     }
-    
+
     &__info{
 
         background-color: #fff;
-        border: 2px solid $blue;
+        border: 2px solid variables.$blue;
         border-radius: 5px;
         box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.28);
         display: block;
@@ -93,18 +95,18 @@
 
             &:hover{
 
-                border: 2px solid $blue;
+                border: 2px solid variables.$blue;
                 transform: translate(0px, -10px);
-    
+
             }
-                
+
         }
 
     }
 
     &__circle{
 
-        background-color: $blue-light;
+        background-color: variables.$blue-light;
         border: 3px solid #fff;
         border-radius: 15px;
         height: 20px;
@@ -116,18 +118,18 @@
         z-index: 99;
 
         @media (min-width: 768px) {
-            
+
             left: -6.2%;
             top: 50%;
-        
+
         }
- 
+
     }
 
     &__date, &__divider, &__tech{
 
         display: inline-block;
-        color: $blue-dark;
+        color: variables.$blue-dark;
 
     }
 
@@ -139,7 +141,7 @@
 
     &__title, &__description{
 
-        color: $darker;
+        color: variables.$darker;
 
     }
 

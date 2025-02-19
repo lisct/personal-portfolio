@@ -1,3 +1,7 @@
+@use '../base/font' as font;
+@use '../variables' as *;
+@use "sass:color";
+
 // Hero
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -17,14 +21,14 @@
     align-items: center;
     background: url("/images/cloud.svg")center  no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-size: 800px;
-    
+
     display:flex;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    width:100%;    
+    width:100%;
 
     @media (min-width: 2560px) {
 
@@ -42,11 +46,11 @@
       @media (min-width: 424px) {
 
           font-size: 3rem;
-  
+
       }
 
     }
-    
+
   }
 
   // user name
@@ -54,7 +58,7 @@
 
     color: $blue_dark;
     font-weight: 300;
-    font-family: $font-main-bold;
+    font-family: font.$font-main-bold;
     position: relative;
 
     &_dot:before{
@@ -77,17 +81,17 @@
           left: 15px;
           top: 0px;
           width: 8px;
-          
+
         }
 
       }
-  
+
     }
 
   }
 
   &_explore{
-    
+
     bottom: 53px;
     cursor: pointer;
     left: 20%;
@@ -95,18 +99,18 @@
 
     &--text{
 
-      color: darken($gray_dark, 20%);
+      color: color.mix(black, $gray_dark, 20%);
       transition: all .1s ease-in-out;
 
     }
-    
+
     &--line{
 
       // circle
       &:after{
 
         content: '';
-        background: darken($gray_dark, 20%);
+        background: color.mix(black, $gray_dark, 20%);
         border-radius: 50px;
         bottom: 4px;
         display: inline-block;
@@ -117,8 +121,8 @@
         width: 7px;
         z-index: 9999;
         transition: all .1s ease-in-out;
-        
-        
+
+
       }
 
       // line to move
@@ -133,12 +137,12 @@
         transition: all .2s ease-in-out;
         width: 3px;
         z-index: 999;
-        
+
       }
 
    }
 
-    // background line 
+    // background line
     &--fill:before{
 
       content: '';
@@ -148,7 +152,7 @@
       width: 3px;
       position: absolute;
       bottom: -53px;
-      
+
     }
 
 
@@ -163,17 +167,17 @@
 
       // circle
       .hero_explore--line::after{
-        
-        background: $blue_dark;  
-        transform: scale(1.3);  
+
+        background: $blue_dark;
+        transform: scale(1.3);
 
       }
 
       // line to move
       .hero_explore--line:before{
 
-        height: 57px;  
-        background: $blue;      
+        height: 57px;
+        background: $blue;
 
       }
 

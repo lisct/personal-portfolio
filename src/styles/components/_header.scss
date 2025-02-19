@@ -1,3 +1,6 @@
+@use '../variables' as variables;
+@use "sass:color";
+
 // Header
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -38,7 +41,7 @@ header{
 
 }
 
-  
+
 // Social SVG
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -58,14 +61,14 @@ header{
     a{
 
       padding: 7px;
-    
+
     }
 
     .cls-1{
 
-      fill:$blue;
+      fill:variables.$blue;
       transition: all .2s;
-      
+
     }
 
   }
@@ -84,9 +87,9 @@ header{
   }
 
   // Hover icons
-  
+
   &_icon:hover{
-    
+
     transform: scale(1.2);
 
   }
@@ -95,10 +98,10 @@ header{
 
     .cls-1{
 
-      fill: darken($blue, 20%);
+      fill: color.mix(black, variables.$blue, 20%);
 
     }
-    
+
   }
 
   &_behance:hover {
@@ -108,7 +111,7 @@ header{
       fill: #0057ff;
 
     }
-    
+
   }
 
   &_dribble:hover {
@@ -118,7 +121,7 @@ header{
       fill: #ea4c89;
 
     }
-    
+
   }
 
   &_github:hover {
@@ -128,7 +131,7 @@ header{
       fill: #24292e;
 
     }
-    
+
   }
 
   &_instagram:hover {
@@ -138,7 +141,7 @@ header{
       fill: #ED4956;
 
     }
-    
+
   }
 
   &_twitter:hover {
@@ -148,7 +151,7 @@ header{
       fill: #1da1f2;
 
     }
-    
+
   }
 
   &_linkedin:hover {
@@ -158,7 +161,7 @@ header{
       fill: #0077B5;
 
     }
-    
+
   }
 
 }

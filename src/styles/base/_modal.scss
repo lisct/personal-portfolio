@@ -1,3 +1,5 @@
+@use '../variables' as variables;
+
 #modal {
 
     position: fixed;
@@ -19,7 +21,7 @@
     -webkit-transition: all .3s ease-in-out;
 
   }
-  
+
   #modal:target {
 
     opacity: 1;
@@ -28,20 +30,20 @@
 
     @media (min-width: 424px) {
 
-      top: 0; 
+      top: 0;
 
-    }   
+    }
 
   }
 
   #modal .header, #modal .footer {
-      
+
     border-radius: 5px 5px 0 0;
 
   }
-  
+
   #modal .btn { float: right }
-  
+
   .modal-content {
 
     background:white;
@@ -55,9 +57,9 @@
       padding: 4em 3em 3em 3em;
 
     }
-    
+
   }
-  
+
   #modal .overlay {
 
     background-color: #000;
@@ -70,7 +72,7 @@
     z-index: 10;
 
   }
-  
+
   .close-button {
     height: 28px;
     width: 28px;
@@ -78,7 +80,7 @@
     box-sizing: border-box;
     line-height: 50px;
     display: inline-block;
-    background: $blue_dark;
+    background: variables.$blue_dark;
     position: absolute;
     right: 14px;
     top: 14px;
