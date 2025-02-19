@@ -24,8 +24,8 @@ class HeroContent extends React.Component {
               L<span className="hero_user_dot">i</span>sbel Cruz{" "}
             </span>
             <span className="hero_user_icon">🙋🏻‍♀️</span>, <br />
-            Front End Developer <br />
-            from DR, based in Houston, TX. <br />
+            Front-End Engineer <br />
+            based in Houston, TX. <br />
           </h1>
         </div>
 
